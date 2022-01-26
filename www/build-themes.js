@@ -26,19 +26,19 @@ const importer = function importer(url, prev) {
   return { file };
 };
 
-if (!fs.existsSync('./public/static')) {
-  fs.mkdirSync('./public/static', { recursive: true });
+if (!fs.existsSync(path.resolve(__dirname, './public/static'))) {
+  fs.mkdirSync(path.resolve(__dirname, './public/static'), { recursive: true });
 }
 
 // compile SASS stylesheet to CSS for each theme in the config
 // complied CSS files will be stored in ./public/static/ directory
 THEMES.forEach(theme => {
   const result = sass.renderSync({
-    file: `./src/scss/${theme.stylesheet}.scss`,
+    file: path.resolve(__dirname, `./src/scss/${theme.stylesheet}.scss`),
     outputStyle: 'compressed',
     importer,
     quietDeps: true,
   });
 
-  fs.writeFileSync(`./public/static/${theme.stylesheet}.css`, result.css);
+  fs.writeFileSync(path.resolve(__dirname, `./public/static/${theme.stylesheet}.css`), result.css);
 });
