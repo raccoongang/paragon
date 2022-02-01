@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import BaseAlert from 'react-bootstrap/Alert';
 import divWithClassName from 'react-bootstrap/divWithClassName';
+import { FormattedMessage } from 'react-intl';
 import { useMediaQuery } from 'react-responsive';
 import { Icon } from '..';
 import breakpoints from '../utils/breakpoints';
@@ -64,7 +65,11 @@ const Alert = React.forwardRef(({
                 variant="tertiary"
                 onClick={onClose}
               >
-                {closeLabel}
+                <FormattedMessage
+                  id="pgn.Alert.closeLabel"
+                  defaultMessage={closeLabel}
+                  description="Label of a close button on Alert component"
+                />
               </Button>
             )}
             {actions && actions.map(cloneActionElement)}
