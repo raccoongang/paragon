@@ -163,3 +163,5 @@ export {
   useAbsoluteLayout,
   useFlexLayout,
 } from 'react-table';
+
+export { default as messages } from './i18n';

@@ -1,0 +1,15 @@
+@import "variables";
+@import "~bootstrap/scss/pagination";
+
+.page-link {
+    border-color: $pagination-border-color !important;
+    border-radius: 0 !important;
+
+    div {
+        display: inline-block;
+    }
+}
+
+.page-item > .btn {
+    transition: none;
+}

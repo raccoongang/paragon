@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/Pagination/constants.js"],"names":["ELLIPSIS"],"mappings":"AAAA;AACA,OAAO,IAAMA,QAAQ,GAAG,KAAjB","sourcesContent":["/* eslint-disable import/prefer-default-export */\nexport const ELLIPSIS = '...';\n"],"file":"constants.js"}
