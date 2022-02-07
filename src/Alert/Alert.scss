@@ -28,6 +28,11 @@
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
+
+    [dir="rtl"] & {
+      margin-right: 0;
+      margin-left: $alert-icon-space;
+    }
   }
 }
 
@@ -47,6 +52,10 @@
 
   div {
     flex-grow: 1;
+  }
+
+  [dir="rtl"] & {
+    text-align: right;
   }
 }
 
@@ -80,8 +89,14 @@
 .pgn__alert-message-wrapper {
   display: flex;
   align-items: center;
+
   .pgn__alert-actions {
     margin-left: $alert-actions-gap;
+
+    [dir="rtl"] & {
+      margin-left: 0;
+      margin-right: $alert-actions-gap;
+    }
   }
 }
 

@@ -301,6 +301,11 @@ select.form-control {
   &:checked {
     border-color: $custom-control-indicator-checked-border-color;
   }
+
+  [dir="rtl"] & {
+    margin-left: $custom-control-gutter;
+    margin-right: 0;
+  }
 }
 
 .pgn__form-checkbox-input {

@@ -98,6 +98,12 @@
   .pgn__modal-title {
     font-size: $h3-font-size;
     margin-right: 3rem; // roughly accomodate the width of the close buttonn
+
+    [dir="rtl"] & {
+      margin-left: 3rem;
+      margin-right: 0;
+      text-align: right;
+    }
   }
 }
 
@@ -192,13 +198,19 @@
     }
   }
 
-  .pgn__modal-body-content > *:last-child {
-    margin-bottom: 0;
-  }
+  .pgn__modal-body-content {
+    > *:last-child {
+      margin-bottom: 0;
+    }
 
-  // Avoid doubling up on padding with containers
-  .pgn__modal-body-content > .container-fluid {
-    padding: 0;
+    // Avoid doubling up on padding with containers
+    > .container-fluid {
+      padding: 0;
+    }
+
+    [dir="rtl"] & {
+      text-align: right;
+    }
   }
 
   .pgn__modal.pgn__modal-scroll-fullscreen & {
