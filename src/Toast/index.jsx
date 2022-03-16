@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import BaseToast from 'react-bootstrap/Toast';
 import ToastContainer from './ToastContainer';
-import { Button, IconButton } from '..';
+import Button from '../Button';
+import IconButton from '../IconButton';
 
 function Toast({
   action, children, closeLabel, delay, onClose, show,

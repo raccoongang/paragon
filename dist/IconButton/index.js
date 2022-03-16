@@ -13,7 +13,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { OverlayTrigger, Tooltip } from '..';
+import Tooltip from '../Tooltip';
+import { OverlayTrigger } from '../Overlay';
 var IconButton = /*#__PURE__*/React.forwardRef(function (_ref, ref) {
   var alt = _ref.alt,
       invertColors = _ref.invertColors,

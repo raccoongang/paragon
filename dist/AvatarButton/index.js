@@ -9,7 +9,8 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button, Avatar } from '..';
+import Button from '../Button';
+import Avatar from '../Avatar';
 var buttonSizesToAvatarSize = {
   sm: 'xs',
   md: 'sm',

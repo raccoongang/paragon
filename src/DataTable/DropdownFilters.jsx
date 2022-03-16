@@ -1,5 +1,7 @@
 import React, { useContext, useMemo } from 'react';
-import { DropdownButton, useWindowSize, breakpoints } from '..';
+import { DropdownButton } from '../Dropdown';
+import useWindowSize from '../hooks/useWindowSize';
+import breakpoints from '../utils/breakpoints';
 import DataTableContext from './DataTableContext';
 
 /** The first filter will be as an input, additional filters will be available in a dropdown.  */

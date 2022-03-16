@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button } from '..';
+import Button from '../Button';
 import ModalContext from './ModalContext';
 
 const ModalCloseButton = React.forwardRef(({ as, children, ...props }, ref) => {

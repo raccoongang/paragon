@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { OverlayTrigger, Tooltip } from '..';
+import Tooltip from '../Tooltip';
+import { OverlayTrigger } from '../Overlay';
 
 const IconButton = React.forwardRef(({
   alt,

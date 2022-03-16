@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '..';
+import Button from '../Button';
 import DataTableContext from './DataTableContext';
 
 var FilterStatus = function FilterStatus(_ref) {

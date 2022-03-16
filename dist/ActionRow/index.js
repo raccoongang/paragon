@@ -56,5 +56,7 @@ var ActionRowSpacer = function ActionRowSpacer() {
 
 ActionRow.Spacer = ActionRowSpacer;
 export { ActionRowSpacer };
-export default ActionRow;
+export default Object.assign(ActionRow, {
+  Spacer: ActionRowSpacer
+});
 //# sourceMappingURL=index.js.map

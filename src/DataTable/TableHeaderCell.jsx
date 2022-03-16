@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Icon } from '..';
+import Icon from '../Icon';
 import { ArrowDropDown, ArrowDropUp, ArrowDropUpDown } from '../../icons';
 
 export const SortIndicator = ({ isSorted, isSortedDesc }) => {

@@ -27,7 +27,7 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import isRequiredIf from 'react-proptype-conditional-require';
-import { Button } from '..';
+import Button from '../Button';
 import withDeprecatedProps, { DEPR_TYPES } from '../withDeprecatedProps';
 
 var StatusAlert = /*#__PURE__*/function (_React$Component) {

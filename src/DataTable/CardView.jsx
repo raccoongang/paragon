@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { useRows } from './hooks';
-import { CardGrid } from '..';
+import CardGrid from '../Card/CardGrid';
 
 const CardView = ({
   columnSizes, CardComponent, className,

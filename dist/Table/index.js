@@ -37,7 +37,7 @@ import React from 'react';
 import classNames from 'classnames';
 import isRequiredIf from 'react-proptype-conditional-require';
 import PropTypes from 'prop-types';
-import { Button } from '..';
+import Button from '../Button';
 import withDeprecatedProps, { DEPR_TYPES } from '../withDeprecatedProps';
 
 var Table = /*#__PURE__*/function (_React$Component) {

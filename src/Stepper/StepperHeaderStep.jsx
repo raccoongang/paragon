@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { StepperContext } from './StepperContext';
-import { Icon } from '..';
+import Icon from '../Icon';
 import { Check, Error } from '../../icons';
 
 const StepperHeaderStep = ({

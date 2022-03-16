@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import MediaQuery from 'react-responsive';
 
-import { Button, Dropdown, IconButton } from '..';
+import Button from '../Button';
+import Dropdown from '../Dropdown';
+import IconButton from '../IconButton';
 import Icon from '../Icon';
 import breakpoints from '../utils/breakpoints';
 import newId from '../utils/newId';

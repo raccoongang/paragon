@@ -13,7 +13,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button } from '..';
+import Button from '../Button';
 import ModalContext from './ModalContext';
 var ModalCloseButton = /*#__PURE__*/React.forwardRef(function (_ref, ref) {
   var as = _ref.as,

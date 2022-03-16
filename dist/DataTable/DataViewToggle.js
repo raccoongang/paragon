@@ -11,7 +11,10 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 import React, { useContext, useState } from 'react';
-import { DataTableContext, Icon, IconButtonToggle, IconButtonWithTooltip } from '..';
+import DataTableContext from './DataTableContext';
+import Icon from '../Icon';
+import IconButtonToggle from '../IconButtonToggle';
+import { IconButtonWithTooltip } from '../IconButton';
 import { GridView, ListView } from '../../icons';
 export var DATA_VIEW_TOGGLE_VALUES = {
   card: {

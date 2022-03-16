@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { StepperContext } from './StepperContext';
-import { Icon } from '..';
+import Icon from '../Icon';
 import { Check, Error } from '../../icons';
 
 var StepperHeaderStep = function StepperHeaderStep(_ref) {

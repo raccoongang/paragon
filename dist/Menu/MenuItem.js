@@ -13,7 +13,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Icon } from '..';
+import Icon from '../Icon';
 
 var MenuItem = function MenuItem(_ref) {
   var as = _ref.as,

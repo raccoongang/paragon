@@ -13,7 +13,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Icon } from '..';
+import Icon from '../Icon';
 import { Check, Close, Cancel, CheckCircle, RadioButtonUnchecked, WarningFilled } from '../../icons';
 import { FORM_TEXT_TYPES } from './constants';
 var FORM_TEXT_ICONS = (_FORM_TEXT_ICONS = {}, _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.DEFAULT, null), _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.VALID, Check), _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.INVALID, Close), _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.WARNING, WarningFilled), _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.CRITERIA_EMPTY, RadioButtonUnchecked), _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.CRITERIA_VALID, CheckCircle), _defineProperty(_FORM_TEXT_ICONS, FORM_TEXT_TYPES.CRITERIA_INVALID, Cancel), _FORM_TEXT_ICONS);

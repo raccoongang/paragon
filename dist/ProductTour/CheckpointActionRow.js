@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '..';
+import Button from '../Button';
 var CheckpointActionRow = /*#__PURE__*/React.forwardRef(function (_ref, ref) {
   var advanceButtonText = _ref.advanceButtonText,
       dismissButtonText = _ref.dismissButtonText,

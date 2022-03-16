@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import StepperHeaderStep from './StepperHeaderStep';
 import { StepperContext } from './StepperContext';
-import { useWindowSize } from '..';
+import useWindowSize from '../hooks/useWindowSize';
 
 const StepListSeparator = () => (
   <li aria-hidden="true" className="pgn__stepper-header-line" />

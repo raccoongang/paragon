@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Input from '../Input';
-import { FormControl } from '..';
+import FormControl from '../Form/FormControl';
 var propTypes = {
   /** Id of the form input that the validation is for */
   for: PropTypes.string.isRequired,

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import BaseAlert from 'react-bootstrap/Alert';
 import divWithClassName from 'react-bootstrap/divWithClassName';
 import { useMediaQuery } from 'react-responsive';
-import { Icon } from '..';
+import Icon from '../Icon';
 import breakpoints from '../utils/breakpoints';
 import Button from '../Button';
 import ActionRow from '../ActionRow';

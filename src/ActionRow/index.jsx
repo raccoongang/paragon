@@ -42,4 +42,4 @@ const ActionRowSpacer = () => <span className="pgn__action-row-spacer" />;
 ActionRow.Spacer = ActionRowSpacer;
 
 export { ActionRowSpacer };
-export default ActionRow;
+export default Object.assign(ActionRow, { Spacer: ActionRowSpacer });

@@ -7,7 +7,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { StepperContext } from './StepperContext';
-import { ActionRow } from '..';
+import ActionRow from '../ActionRow';
 
 var StepperActionRow = function StepperActionRow(_ref) {
   var as = _ref.as,

@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
-import {
-  DataTableContext, Icon, IconButtonToggle, IconButtonWithTooltip,
-} from '..';
+import DataTableContext from './DataTableContext';
+import Icon from '../Icon';
+import IconButtonToggle from '../IconButtonToggle';
+import { IconButtonWithTooltip } from '../IconButton';
 import { GridView, ListView } from '../../icons';
 
 export const DATA_VIEW_TOGGLE_VALUES = {

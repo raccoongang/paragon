@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 import DataTableContext from './DataTableContext';
 import { MoreVert } from '../../icons';
-import {
-  Dropdown, useWindowSize, Icon, IconButton, breakpoints, Button,
-} from '..';
+import Dropdown from '../Dropdown';
+import useWindowSize from '../hooks/useWindowSize';
+import Icon from '../Icon';
+import Button from '../Button';
+import breakpoints from '../utils/breakpoints';
 
 export const DROPDOWN_BUTTON_TEXT = 'More actions';
 export const SMALL_SCREEN_DROPDOWN_BUTTON_TEXT = 'Actions';

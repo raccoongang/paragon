@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '..';
+import Button from '../Button';
 
 var ExpandAll = function ExpandAll(_ref) {
   var getToggleAllRowsExpandedProps = _ref.getToggleAllRowsExpandedProps,

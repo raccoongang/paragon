@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Dropdown from 'react-bootstrap/Dropdown';
 import BaseDropdownToggle from 'react-bootstrap/DropdownToggle';
 import DropdownDeprecated from './deprecated';
-import { IconButton, Button } from '..';
+import IconButton from '../IconButton';
+import Button from '../Button';
 
 const DropdownToggle = React.forwardRef(({
   as,
