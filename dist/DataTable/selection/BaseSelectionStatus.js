@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '../..';
+import Button from '../../Button';
 import DataTableContext from '../DataTableContext';
 import { SELECT_ALL_TEST_ID, CLEAR_SELECTION_TEST_ID } from './data/constants';
 

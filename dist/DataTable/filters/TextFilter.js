@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
-import { Form, FormLabel, Input } from '../..';
+import Form from '../../Form';
+import FormLabel from '../../Form/FormLabel';
+import Input from '../../Input';
 import { newId } from '../../utils';
 
 function TextFilter(_ref) {

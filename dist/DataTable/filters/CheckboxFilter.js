@@ -1,6 +1,8 @@
 import React, { useRef, useMemo } from 'react';
 import PropTypes from 'prop-types';
-import { Form, FormLabel, Badge } from '../..';
+import Form from '../../Form';
+import FormLabel from '../../Form/FormLabel';
+import Badge from '../../Badge';
 import { newId } from '../../utils';
 import LabelledCheckbox from './LabelledCheckbox';
 

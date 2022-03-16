@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
-import { Form } from '../..';
+import Form from '../../Form';
 import { newId } from '../../utils';
 var DEFAULT_VALUE = '';
 
