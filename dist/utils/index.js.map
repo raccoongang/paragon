@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/utils/index.js"],"names":["default","newId"],"mappings":"AAAA;AACA,SAASA,OAAO,IAAIC,KAApB,QAAiC,SAAjC","sourcesContent":["// eslint-disable-next-line import/prefer-default-export\nexport { default as newId } from './newId';\n"],"file":"index.js"}

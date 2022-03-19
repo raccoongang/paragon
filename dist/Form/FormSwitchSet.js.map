@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/Form/FormSwitchSet.jsx"],"names":["FormSwitchSet"],"mappings":"AAAA,OAAOA,aAAP,MAA0B,mBAA1B;AAEA,eAAeA,aAAf","sourcesContent":["import FormSwitchSet from './FormCheckboxSet';\n\nexport default FormSwitchSet;\n"],"file":"FormSwitchSet.js"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/Collapse/index.jsx"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,0BAAxB","sourcesContent":["export { default } from 'react-bootstrap/Collapse';\n"],"file":"index.js"}
