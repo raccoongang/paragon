@@ -20,7 +20,7 @@ notes: ''
   return (
     <div className="d-flex">
       {variants.map((variant) => (
-        <IconButton src={Close} iconAs={Icon} alt="Close" onClick={() => {}} variant={variant} className="mr-2" />
+        <IconButton key={variant} src={Close} iconAs={Icon} alt="Close" onClick={() => {}} variant={variant} className="mr-2" />
       ))}
     </div>
   );
@@ -36,6 +36,7 @@ notes: ''
     <div className="d-flex">
       {variants.map((variant) => (
         <IconButtonWithTooltip
+          key={variant}
           tooltipPlacement='top'
           tooltipContent={<div>a nice tooltip of {variant}!</div>}
           src={Close}
@@ -51,29 +52,6 @@ notes: ''
 }
 ```
 
-
-### Basic Usage with FontAwesome Icon
-
-```jsx live
-() => {
-  const icon = FontAwesome.faTimes;
-
-  return (
-    <div className="d-flex">
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="brand" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="primary" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="secondary" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="success" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="warning" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="danger" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="light" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="dark" />
-      <IconButton className="mr-2" icon={icon} alt="Close" onClick={() => {}} variant="black" />
-    </div>
-  );
-}
-```
-
 ### Active State
 
 ```jsx live
@@ -81,10 +59,17 @@ notes: ''
   const variants = ["brand", "primary", "secondary", "success", "warning", "danger", "light", "dark", "black"];
   return (
     <div className="d-flex">
-      {variants.map((variant, index) => (
-        <IconButton
-         isActive
-         src={Close} iconAs={Icon} alt="Close" onClick={() => {}} variant={variant} className="mr-2" />
+      {variants.map((variant) => (
+        <IconButton 
+          isActive
+          key={variant}
+          src={Close}
+          iconAs={Icon}
+          alt="Close"
+          onClick={() => {}}
+          variant={variant}
+          className="mr-2"
+        />
       ))}
     </div>
   );
@@ -98,11 +83,18 @@ notes: ''
   const variants = ["brand", "primary", "secondary", "success", "warning", "danger", "light", "dark", "black"];
   return (
     <div className="d-flex">
-      {variants.map((variant, index) => (
-        <IconButton
-         invertColors
-         isActive
-         src={Close} iconAs={Icon} alt="Close" onClick={() => {}} variant={variant} className="mr-2" />
+      {variants.map((variant) => (
+        <IconButton 
+          invertColors
+          isActive
+          key={variant}
+          src={Close}
+          iconAs={Icon}
+          alt="Close"
+          onClick={() => {}}
+          variant={variant}
+          className="mr-2"
+        />
       ))}
     </div>
   );
@@ -114,13 +106,12 @@ notes: ''
 
 ```jsx live
 () => {
-  const icon = FontAwesome.faBars;
-
   return (
     <div className="d-flex">
       <div className="p-1 bg-brand">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="brand"
@@ -129,7 +120,8 @@ notes: ''
       </div>
       <div className="p-1 bg-primary">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="primary"
@@ -138,7 +130,8 @@ notes: ''
       </div>
       <div className="p-1 bg-secondary">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="secondary"
@@ -147,7 +140,8 @@ notes: ''
       </div>
       <div className="p-1 bg-success">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="success"
@@ -156,7 +150,8 @@ notes: ''
       </div>
       <div className="p-1 bg-warning">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="warning"
@@ -165,7 +160,8 @@ notes: ''
       </div>
       <div className="p-1 bg-danger">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="danger"
@@ -174,7 +170,8 @@ notes: ''
       </div>
       <div className="p-1 bg-light">
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="light"
@@ -183,7 +180,8 @@ notes: ''
       </div>
       <div className="p-1" style={{ background: "black" }}>
         <IconButton
-          icon={icon}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => console.log("You clicked the menu button")}
           variant="black"
@@ -204,7 +202,8 @@ notes: ''
       <div className="mb-1">
         Small
         <IconButton
-          icon={FontAwesome.faBars}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => {}}
           variant="primary"
@@ -214,7 +213,8 @@ notes: ''
       <div className="mb-1">
         Inline:
         <IconButton
-          icon={FontAwesome.faBars}
+          src={MenuIcon}
+          iconAs={Icon}
           alt="Menu"
           onClick={() => {}}
           variant="primary"
@@ -225,8 +225,9 @@ notes: ''
         An <strong>inline</strong> Icon Button inherits font size!
         For example, applying className="x-small" will make the Icon Button look like this:
         <IconButton
-          icon={FontAwesome.faSmile}
-          alt="Smile"
+          src={Favorite}
+          iconAs={Icon}
+          alt="Favorite"
           onClick={() => {}}
           variant="primary"
           size="inline"
