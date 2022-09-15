@@ -28,9 +28,9 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: "feat: 123"
-          title: "123"
-          body: "123"
+          commit-message: "docs: update tokens build"
+          title: "docs: update tokens build"
+          body: "Contains automated changes to tokens build, which provides css and scss variables generation."
           labels: automerge
-          branch: zadorozhnii/auto-commit-build-tokens
+          branch: design-tokens/update-tokens-build
           base: master
