@@ -33,4 +33,4 @@ jobs:
           body: "Contains automated changes to tokens build, which provides css and scss variables generation."
           labels: automerge
           branch: design-tokens/update-tokens-build
-          base: master
+          base: zadorozhnii/auto-commit-build-tokens
