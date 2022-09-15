@@ -28,7 +28,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: "123"
+          commit-message: "feat: 123"
           title: "123"
           body: "123"
           labels: automerge
