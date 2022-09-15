@@ -23,6 +23,7 @@ jobs:
         working-directory: tokens
       - name: Run build script
         run: sudo touch 123.txt
+        shell: bash
       - name: Create pull request for dependent project usages
         id: cpr
         uses: peter-evans/create-pull-request@v3
