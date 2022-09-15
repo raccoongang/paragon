@@ -1,0 +1,35 @@
+name: Tokens auto-build
+
+on:
+  push:
+    paths:
+      - 'tokens/**'
+
+jobs:
+  tokens-update:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [16]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm ci
+        working-directory: tokens
+      - name: Run build script
+        run: sudo touch 123.txt
+      - name: Create pull request for dependent project usages
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: "123"
+          title: "123"
+          body: "123"
+          labels: automerge
+          branch: ${CI_COMMIT_BRANCH}
+          base: master
