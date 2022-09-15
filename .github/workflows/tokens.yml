@@ -32,5 +32,5 @@ jobs:
           title: "123"
           body: "123"
           labels: automerge
-          branch: ${CI_COMMIT_BRANCH}
+          branch: zadorozhnii/auto-commit-build-tokens
           base: master
