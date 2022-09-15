@@ -22,7 +22,7 @@ jobs:
         run: npm ci
         working-directory: tokens
       - name: Run build script
-        run: sudo touch 123.txt
+        run: touch 123.txt
         shell: bash
       - name: Create pull request for dependent project usages
         id: cpr
