@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: $zindex-modal;
+  z-index: var(--pgn-zindex-modal);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -125,7 +125,7 @@
   }
 
   &::before {
-    border-top-color: rgba($black, 20%);
+    border-top-color: rgba(var(--pgn-color-black), 20%);
   }
 }
 
@@ -160,8 +160,8 @@
 .pgn__modal-popup__arrow::after,
 .pgn__modal-popup__arrow-top-start::after,
 .pgn__modal-popup__arrow-top::after {
-  bottom: $border-width;
-  border-top-color: $white;
+  bottom: var(--pgn-border-width);
+  border-top-color: var(--pgn-color-white);
 }
 
 [data-popper-placement^="right"] .pgn__modal-popup__arrow-auto,

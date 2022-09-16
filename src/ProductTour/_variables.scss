@@ -1,8 +1,8 @@
 // Checkpoints
 
-$checkpoint-background-color:       $light-300 !default;
+$checkpoint-background-color:       var(--pgn-color-light-300) !default;
 
-$checkpoint-body-color:             $gray-700;
+$checkpoint-body-color:             var(--pgn-color-gray-700);
 
 $checkpoint-border-color:           $brand !default;
 $checkpoint-border-width:           8px !default;

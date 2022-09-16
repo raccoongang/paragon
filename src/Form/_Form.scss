@@ -18,7 +18,7 @@ $select-icon-padding: .5625rem !default;
 }
 
 .form-control:hover {
-  border: solid $input-hover-width $dark-700;
+  border: solid $input-hover-width var(--pgn-color-dark-700);
 }
 
 .pgn__form-group {
@@ -157,17 +157,17 @@ $select-icon-padding: .5625rem !default;
   }
 
   .btn-icon {
-    color: $gray-500 !important;
+    color: var(--pgn-color-gray-500) !important;
 
     &:hover {
-      background-color: $gray-500 !important;
-      color: $white !important;
+      background-color: var(--pgn-color-gray-500) !important;
+      color: var(--pgn-color-white) !important;
     }
 
     &:focus {
-      background-color: $white !important;
-      color: $gray-500 !important;
-      box-shadow: inset 0 0 0 2px $gray-500 !important;
+      background-color: var(--pgn-color-white) !important;
+      color: var(--pgn-color-gray-500) !important;
+      box-shadow: inset 0 0 0 2px var(--pgn-color-gray-500) !important;
     }
   }
 }
@@ -439,8 +439,8 @@ select.form-control {
 }
 
 .pgn__form-switch-helper-text {
-  color: $gray-500;
-  font-size: $font-size-xs;
+  color: var(--pgn-color-gray-500);
+  font-size: var(--pgn-font-size-xs);
   margin-top: .25rem;
 }
 
@@ -452,7 +452,7 @@ select.form-control {
   }
 
   &:focus {
-    border-color: $black;
+    border-color: var(--pgn-color-black);
 
     &::before {
       border-radius: $custom-radio-indicator-border-radius;
