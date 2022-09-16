@@ -16,7 +16,7 @@
 
   .progress {
     overflow: visible;
-    background-color: $light-300;
+    background-color: var(--pgn-color-light-300);
     height: $annotated-progress-height;
     border: none;
 
@@ -36,11 +36,11 @@
     }
 
     .pgn__progress-tick--white::after {
-      background: $light-300;
+      background: var(--pgn-color-light-300);
     }
 
     .pgn__progress-tick--black::after {
-      background: $primary-500;
+      background: var(--pgn-color-primary-500);
     }
 
     @each $name, $color in $progress-colors {
@@ -69,7 +69,7 @@
     content: "";
     height: $annotated-progress-height;
     width: 1px;
-    background: $primary-500;
+    background: var(--pgn-color-primary-500);
   }
 
   .progress::after {

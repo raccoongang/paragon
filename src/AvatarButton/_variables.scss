@@ -1,3 +1,3 @@
-$avatar-button-padding-left: .25em !default;
-$avatar-button-padding-left-sm: .25em !default;
-$avatar-button-padding-left-lg: .25em !default;
+var(--pgn-avatar-button-padding-left-base): .25em !default;
+var(--pgn-avatar-button-padding-left-base)-sm: .25em !default;
+var(--pgn-avatar-button-padding-left-base)-lg: .25em !default;

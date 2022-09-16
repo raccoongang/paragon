@@ -1,46 +1,46 @@
 @import "variables";
 
 .pgn__avatar {
-  border-radius: $avatar-border-radius;
-  border: $avatar-border;
+  border-radius: var(--pgn-avatar-border-base)-radius;
+  border: var(--pgn-avatar-border-base);
   display: inline-block;
-  height: $avatar-size;
+  height: var(--pgn-avatar-size-base);
   overflow: hidden;
-  width: $avatar-size;
+  width: var(--pgn-avatar-size-base);
   object-fit: cover;
 
   &.pgn__avatar-xs {
-    height: $avatar-size-xs;
-    width: $avatar-size-xs;
+    height: var(--pgn-avatar-size-base)-xs;
+    width: var(--pgn-avatar-size-base)-xs;
   }
 
   &.pgn__avatar-sm {
-    height: $avatar-size-sm;
-    width: $avatar-size-sm;
+    height: var(--pgn-avatar-size-base)-sm;
+    width: var(--pgn-avatar-size-base)-sm;
   }
 
   &.pgn__avatar-md {
-    height: $avatar-size;
-    width: $avatar-size;
+    height: var(--pgn-avatar-size-base);
+    width: var(--pgn-avatar-size-base);
   }
 
   &.pgn__avatar-lg {
-    height: $avatar-size-lg;
-    width: $avatar-size-lg;
+    height: var(--pgn-avatar-size-base)-lg;
+    width: var(--pgn-avatar-size-base)-lg;
   }
 
   &.pgn__avatar-xl {
-    height: $avatar-size-xl;
-    width: $avatar-size-xl;
+    height: var(--pgn-avatar-size-base)-xl;
+    width: var(--pgn-avatar-size-base)-xl;
   }
 
   &.pgn__avatar-xxl {
-    height: $avatar-size-xxl;
-    width: $avatar-size-xxl;
+    height: var(--pgn-avatar-size-base)-xxl;
+    width: var(--pgn-avatar-size-base)-xxl;
   }
 
   &.pgn__avatar-huge {
-    height: $avatar-size-huge;
-    width: $avatar-size-huge;
+    height: var(--pgn-avatar-size-base)-huge;
+    width: var(--pgn-avatar-size-base)-huge;
   }
 }

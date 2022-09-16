@@ -70,7 +70,7 @@
   &.btn-primary:focus::before {
     border: $pagination-focus-border-width solid $pagination-focus-color;
 
-    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+    @include button-size(var(--pgn-btn-padding-y-base), var(--pgn-btn-padding-x-base), var(--pgn-btn-font-size-base), var(--pgn-btn-line-height-base), var(--pgn-btn-border-radius-base));
   }
 
   div {
@@ -157,7 +157,7 @@
 .pagination-inverse {
   %dark-styles {
     background-color: transparent;
-    color: $white;
+    color: var(--pgn-color-white);
   }
 
   .pgn__dark-styles {
@@ -234,7 +234,7 @@
     height: 0;
     border-left: $pagination-toggle-border solid transparent;
     border-right: $pagination-toggle-border solid transparent;
-    border-top: $pagination-toggle-border solid $gray-700;
+    border-top: $pagination-toggle-border solid var(--pgn-color-gray-700);
     transform: rotate(0);
     inset-inline-start: .5rem;
     top: 0;

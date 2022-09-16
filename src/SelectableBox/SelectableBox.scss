@@ -25,7 +25,7 @@
   text-align: start;
 
   &:focus-visible {
-    outline: 1px solid $primary-700;
+    outline: 1px solid var(--pgn-color-primary-700);
   }
 
   .pgn__form-radio,
@@ -45,9 +45,9 @@
 }
 
 .pgn__selectable_box-active {
-  outline: 2px solid $primary-500;
+  outline: 2px solid var(--pgn-color-primary-500);
 }
 
 .pgn__selectable_box-invalid {
-  outline: 2px solid $danger-300;
+  outline: 2px solid var(--pgn-color-danger-300);
 }
