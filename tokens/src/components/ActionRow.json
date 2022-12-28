@@ -6,5 +6,12 @@
         "y": { "value": ".5rem", "source": "$action-row-gap-y" }
       }
     }
+  },
+  "color": {
+    "link": {
+      "test": {
+        "value": ".12"
+      }
+    }
   }
 }

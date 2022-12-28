@@ -1,0 +1,10 @@
+{
+  "color": {
+    "link": {
+      "test": {
+        "value": ".12",
+        "source": "$link-color"
+      }
+    }
+  }
+}
