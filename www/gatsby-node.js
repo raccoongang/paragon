@@ -49,10 +49,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const isChangelogNode = node.fileAbsolutePath && node.fileAbsolutePath.endsWith('CHANGELOG.md');
 
     createNodeField({
-      // Name of the field you are adding
-      name: 'slug',
       // Individual MDX node
       node,
+      // Name of the field you are adding
+      name: 'slug',
       // Generated value based on filepath with 'components' prefix. you
       // don't need a separating '/' before the value because
       // createFilePath returns a path with the leading '/'.
@@ -79,13 +79,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             id
+            internal {
+              contentFilePath
+              type
+            }
             fields {
               slug
             }
             frontmatter {
               components
             }
-            slug
           }
         }
       }
@@ -102,7 +105,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // you'll call `createPage` for each result
   // eslint-disable-next-line no-restricted-syntax
   for (const { node } of components) {
-    const componentDir = node.slug.split('/')[0];
+    const componentDir = node.fields.slug.split('/')[2];
     const variablesPath = path.resolve(__dirname, `../src/${componentDir}/_variables.scss`);
     let scssVariablesData = {};
 
@@ -111,12 +114,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       scssVariablesData = await processComponentSCSSVariables(variablesPath, themesSCSSVariables);
     }
 
+    let pageTemplate = path.resolve('./src/templates/component-page-template.tsx');
+    if (node.internal.type === 'Mdx') {
+      pageTemplate = `${pageTemplate}?__contentFilePath=${node.internal.contentFilePath}`;
+    }
+
     createPage({
       // This is the slug you created before
       // (or `node.frontmatter.slug`)
       path: node.fields.slug,
       // This component will wrap our MDX content
-      component: path.resolve('./src/templates/component-page-template.tsx'),
+      component: pageTemplate,
       // You can use the values in this context in
       // our page layout component
       context: { id: node.id, components: node.frontmatter.components || [], scssVariablesData },

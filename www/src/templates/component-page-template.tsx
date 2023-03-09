@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import {
   Container,
   Alert,
@@ -19,6 +18,7 @@ import SEO from '../components/SEO';
 import LinkedHeading from '../components/LinkedHeading';
 
 export interface IPageTemplate {
+  children: React.ReactNode,
   data: {
     mdx: {
       frontmatter: {
@@ -48,6 +48,7 @@ export type ShortCodesTypes = {
 export default function PageTemplate({
   data: { mdx, components: componentNodes },
   pageContext: { scssVariablesData },
+  children
 }: IPageTemplate) {
   const isMobile = useMediaQuery({ maxWidth: breakpoints.large.maxWidth });
   const [showMinimizedTitle, setShowMinimizedTitle] = useState(false);
@@ -121,7 +122,7 @@ export default function PageTemplate({
         )}
         <h1 className="mb-4">{mdx.frontmatter.title}</h1>
         <MDXProvider components={shortcodes}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
+         {children}
         </MDXProvider>
         {scssVariables && (
           <div className="mb-5">
@@ -215,9 +216,6 @@ export const pageQuery = graphql`
       description {
         id
         text
-        childMdx {
-          body
-        }
       }
     }
   }

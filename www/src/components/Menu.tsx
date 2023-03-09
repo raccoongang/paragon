@@ -20,21 +20,16 @@ import { Issue } from '../../../icons';
 const menuQuery = graphql`
   query menuQuery {
     components: allMdx(
-      filter: {
-        parent: {
-          internal: { owner: { nin: "gatsby-transformer-react-docgen" } }
-        }
-        frontmatter: { type: {} }
-      }
-      sort: { fields: frontmatter___title }
+      filter: {parent: {internal: {owner: {nin: "gatsby-transformer-react-docgen"}}}, frontmatter: {type: {}}}
+      sort: {frontmatter: {title: ASC}}
     ) {
-      categories: group(field: frontmatter___categories) {
+      categories: group(field: {frontmatter: {categories: SELECT}}) {
         nodes {
           ...ComponentPage
         }
         fieldValue
       }
-      types: group(field: frontmatter___type) {
+      types: group(field: {frontmatter: {type: SELECT}}) {
         nodes {
           ...ComponentPage
         }

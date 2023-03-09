@@ -61,14 +61,18 @@ export interface ICodeBlock {
   live?: boolean,
 }
 
-function CodeBlock({
-  children,
-  className,
-  live,
-}: ICodeBlock) {
+function CodeBlock(props) {
+  const {
+    children,
+    className,
+    live,
+  } = props;
   const intl = useIntl();
   const language: any = className ? className.replace(/language-/, '') : 'jsx';
 
+  console.log(props);
+  console.log(children);
+  console.log(live);
   if (live) {
     return (
       <div className="pgn-doc__code-block">

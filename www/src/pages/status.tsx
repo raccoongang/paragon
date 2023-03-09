@@ -20,21 +20,26 @@ export default function StatusPage() {
 
         <h3>Components Status</h3>
         <StaticQuery
-          query={graphql`query ComponentStatusQuery {
-            allMdx(filter: {frontmatter: {type: {eq: "component"}}}, sort: {fields: frontmatter___title}) {
-              nodes {
-                frontmatter {
-                  designStatus
-                  devStatus
-                  status
-                  notes
-                  status
-                  title
-                  type
+          query={graphql`
+            query ComponentStatusQuery {
+              allMdx(
+                filter: {frontmatter: {type: {eq: "component"}}}
+                sort: {frontmatter: {title: ASC}}
+              ) {
+                nodes {
+                  frontmatter {
+                    designStatus
+                    devStatus
+                    status
+                    notes
+                    status
+                    title
+                    type
+                  }
                 }
               }
             }
-          }`}
+          `}
           render={({ allMdx }) => {
             if (!allMdx || !allMdx.nodes) { return null; }
             const components = allMdx.nodes.map(({ frontmatter }: IComponents) => frontmatter)

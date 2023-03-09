@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Badge, Card } from '~paragon-react';
 import PropType from './PropType';
 
@@ -29,19 +28,15 @@ DefaultValue.defaultProps = {
 };
 
 export interface IProp {
+  children: React.ReactNode,
   name: string,
   type?: {},
   required?: boolean,
   defaultValue: {},
-  description: {
-    childMdx: {
-      body: string,
-    },
-  },
 }
 
 function Prop({
-  name, type, required, defaultValue, description,
+  name, type, required, defaultValue, children,
 }: IProp) {
   return (
     <li className="px-4 border-top border-light-300">
@@ -57,8 +52,8 @@ function Prop({
           )}
         </div>
         <div className="x-small">
-          {description ? (
-            <MDXRenderer>{description.childMdx.body}</MDXRenderer>
+          {children ? (
+            children
           ) : null}
         </div>
 
@@ -73,16 +68,12 @@ Prop.propTypes = {
   type: PropTypes.shape({}).isRequired,
   required: PropTypes.bool,
   defaultValue: PropTypes.shape({}),
-  description: PropTypes.shape({
-    childMdx: PropTypes.shape({
-      body: PropTypes.string,
-    }),
-  }),
+  children: PropTypes.shape({}),
 };
 Prop.defaultProps = {
   required: false,
   defaultValue: {},
-  description: undefined,
+  children: null,
 };
 
 export interface IPropsTable {
