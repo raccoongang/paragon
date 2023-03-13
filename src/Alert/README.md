@@ -25,7 +25,7 @@ This component utilizes and extends the `Alert` component from react-bootstrap.<
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
 <Alert variant="success">
   This is a "success" alert with{' '}
@@ -58,7 +58,7 @@ The stacked variant should be used for:
 - Extra-small breakpoint and below
 ---
 
-```jsx live
+```jsx live=true
 <>
   <Alert
     variant="info"
@@ -115,7 +115,7 @@ The stacked variant should be used for:
 
 ### Variants
 
-```jsx live
+```jsx live=true
 <>
 <Alert variant="success" dismissible icon={CheckCircle}>
   <Alert.Heading>Hey, nice to see you</Alert.Heading>
@@ -146,7 +146,7 @@ The stacked variant should be used for:
 
 ### Kitchen Sink
 
-```jsx live
+```jsx live=true
 <Alert
   variant="success"
   actions={[

@@ -20,7 +20,7 @@ underlying `input` node. See MDN for documentation on available
 
 ## Controlled Usage
 
-```jsx live
+```jsx live=true
 () => {
   const [value, setValue] = useState('green');
   const handleChange = e => setValue(e.target.value);
@@ -44,7 +44,7 @@ underlying `input` node. See MDN for documentation on available
 
 ## Uncontrolled Usage
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.Label>Which Color?</Form.Label>
   <Form.RadioSet
@@ -62,7 +62,7 @@ underlying `input` node. See MDN for documentation on available
 
 ## Inline layout
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.Label>Which Color?</Form.Label>
   <Form.RadioSet
@@ -83,7 +83,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Group Level Validation
 
-```jsx live
+```jsx live=true
 <Form.Group isInvalid>
   <Form.Label>Which Color?</Form.Label>
   <Form.RadioSet
@@ -103,7 +103,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Individual option validation
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.Label>Which Color?</Form.Label>
   <Form.RadioSet name="color-four">
@@ -141,7 +141,7 @@ underlying `input` node. See MDN for documentation on available
 
 This is supported, but not recommended.
 
-```jsx live
+```jsx live=true
 <>
   <Form.Radio className="ml-2" name="color" value="red">Red</Form.Radio>
   <Form.Radio className="ml-2" name="color" value="green" defaultChecked>Green</Form.Radio>

@@ -19,7 +19,7 @@ Shorthand helpers that build on top of our flexbox utilities to make component l
 
 Stacks are vertical by default and stacked items are full-width by default. Watch this pull request to see more details about the [auto stretching behavior](https://github.com/openedx/paragon/pull/1188).
 
-```jsx live
+```jsx live=true
 <Stack gap={3}>
   <Button>first button</Button>
   <Button>second button</Button>
@@ -29,7 +29,7 @@ Stacks are vertical by default and stacked items are full-width by default. Watc
 
 ## Horizontal direction
 
-```jsx live
+```jsx live=true
 <Stack direction="horizontal" gap={3}>
   <div className="border p-2">first block</div>
   <div className="border p-2">second block</div>

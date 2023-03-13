@@ -24,7 +24,7 @@ A bar to indicate the completed progress of a task.
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   <ProgressBar now={60} label="60%" variant="primary" />
   <br />
@@ -38,7 +38,7 @@ A bar to indicate the completed progress of a task.
 
 ## Basic Usage (Inverse Pallete)
 
-```jsx live
+```jsx live=true
 <div className="bg-dark-700 p-4">
   <ProgressBar now={60} label="60%" />
   <br />
@@ -52,7 +52,7 @@ A bar to indicate the completed progress of a task.
 
 ## Annotated variant
 
-```jsx live
+```jsx live=true
 <>
   <ProgressBar.Annotated
     now={20}

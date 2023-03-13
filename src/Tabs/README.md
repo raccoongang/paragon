@@ -22,7 +22,7 @@ notes: |
 
 ## Uncontrolled usage
 
-```jsx live
+```jsx live=true
 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
   <Tab eventKey="home" title="Home">
     Hello I am the first panel.
@@ -38,7 +38,7 @@ notes: |
 
 ## Controlled usage
 
-```jsx live
+```jsx live=true
 () => {
   const [key, setKey] = useState('home');
 
@@ -64,7 +64,7 @@ notes: |
 
 ## Button group usage
 
-```jsx live
+```jsx live=true
 <Tabs
   defaultActiveKey="profile"
   id="uncontrolled-pills-tab-example"
@@ -84,7 +84,7 @@ notes: |
 
 ## Pills usage
 
-```jsx live
+```jsx live=true
 <Tabs
   defaultActiveKey="profile"
   id="uncontrolled-pills-tab-example"
@@ -104,7 +104,7 @@ notes: |
 
 ## With notification
 
-```jsx live
+```jsx live=true
 <Tabs defaultActiveKey="profile" id="tab-example-with-notification">
   <Tab eventKey="home" title="Home">
     Hello I am the first panel.
@@ -117,7 +117,7 @@ notes: |
 
 ### With screen reader text in notification
 
-```jsx live
+```jsx live=true
 <Tabs defaultActiveKey="profile" id="tab-example-with-sr-notification">
   <Tab eventKey="home" title="Home">
     Hello I am the first panel.
@@ -139,7 +139,7 @@ notes: |
 
 ### Responsive support
 
-```jsx live
+```jsx live=true
 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
   <Tab eventKey="home" title="Home">
     Hello I am the first panel.
@@ -182,7 +182,7 @@ notes: |
 
 ### Basic usage
 
-```jsx live
+```jsx live=true
 <Tabs.Deprecated
   labels={[
     'Panel 1',

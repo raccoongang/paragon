@@ -26,7 +26,7 @@ This component is used to power Tooltips and Popovers.
 
 ## Basic usage
 
-```jsx live
+```jsx live=true
 () => {
   const [isOpen, open, close] = useToggle(false);
   const target = React.useRef(null);

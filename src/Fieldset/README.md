@@ -14,7 +14,7 @@ notes: |
 
 ## basic usage
 
-```jsx live
+```jsx live=true
 <form>
   <Fieldset legend="Name">
     <InputText
@@ -33,7 +33,7 @@ notes: |
 
 ## invalid
 
-```jsx live
+```jsx live=true
 <form>
   <Fieldset legend="Name" invalidMessage="This is invalid!" isValid={false}>
     <InputText
@@ -52,7 +52,7 @@ notes: |
 
 ## invalid with danger theme
 
-```jsx live
+```jsx live=true
 <form>
   <Fieldset
     legend="Name"
@@ -79,7 +79,7 @@ notes: |
 
 ## Validated Form
 
-```jsx live
+```jsx live=true
 class ValidatedForm extends React.Component {
   constructor(props) {
     super(props);

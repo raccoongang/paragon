@@ -12,7 +12,7 @@ A Truncate component can help you crop multiline text. There will be three dots 
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
   <Truncate lines={2}>
     Learners, course teams, researchers, developers: the edX community includes groups with a range of reasons 
     for using the platform and objectives to accomplish. To help members of each group learn about what edX 
@@ -25,7 +25,7 @@ A Truncate component can help you crop multiline text. There will be three dots 
 
 ### With the custom ellipsis
 
-```jsx live
+```jsx live=true
     <Truncate lines={2} ellipsis="🎉🎉🎉" whiteSpace>
         Learners, course teams, researchers, developers: the edX community includes groups with a range of reasons
         for using the platform and objectives to accomplish. To help members of each group learn about what edX
@@ -35,7 +35,7 @@ A Truncate component can help you crop multiline text. There will be three dots 
 
 ### With the onTruncate
 
-```jsx live
+```jsx live=true
     <Truncate lines={2} onTruncate={() => console.log('onTruncate')}>
         Learners, course teams, researchers, developers: the edX community includes groups with a range of reasons
         for using the platform and objectives to accomplish. To help members of each group learn about what edX
@@ -45,7 +45,7 @@ A Truncate component can help you crop multiline text. There will be three dots 
 
 ### Example usage in Card
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
   
@@ -85,7 +85,7 @@ A Truncate component can help you crop multiline text. There will be three dots 
 
 **Note**: `Truncate` supports only plain `HTML` children and not `jsx`.
 
-```jsx live
+```jsx live=true
 <Truncate lines={1}>
   <a href="#">Learners</a>, course teams, researchers, developers: the edX community includes <strong class="strong-class"><i class="i-class">groups with <u>a range</u> of <q>reasons</q></i></strong> for using the platform and objectives to accomplish.
 </Truncate>

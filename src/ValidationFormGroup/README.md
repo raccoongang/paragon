@@ -26,7 +26,7 @@ For children of type input, textarea, and select:
 
 ## basic usage
 
-```jsx live
+```jsx live=true
 <ValidationFormGroup
   for="firstName"
   helpText="This is your name."
@@ -44,7 +44,7 @@ For children of type input, textarea, and select:
 
 ## invalid message
 
-```jsx live
+```jsx live=true
 <ValidationFormGroup
   for="firstName"
   invalid
@@ -63,7 +63,7 @@ For children of type input, textarea, and select:
 
 ## valid message
 
-```jsx live
+```jsx live=true
 <ValidationFormGroup
   for="firstName"
   valid
@@ -82,7 +82,7 @@ For children of type input, textarea, and select:
 
 ## with any kind of input
 
-```jsx live
+```jsx live=true
 <>
 <ValidationFormGroup
   for="weatherToday"

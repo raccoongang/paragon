@@ -15,7 +15,7 @@ notes: |
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <div>
   <Chip>New</Chip>
   <Chip disabled>New</Chip>
@@ -25,7 +25,7 @@ notes: |
 
 ## With Icon Before and After
 
-```jsx live
+```jsx live=true
 <div>
   <Chip iconBefore={Person}>New</Chip>
   <Chip
@@ -50,7 +50,7 @@ notes: |
 
 ## `Chip` Carousel
 
-```jsx live
+```jsx live=true
 <OverflowScroll ariaLabel="example chip carousel" hasInteractiveChildren>
   <OverflowScrollContext.Consumer>
     {({

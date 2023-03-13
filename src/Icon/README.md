@@ -13,7 +13,7 @@ notes: |
 
 Displays an svg icon from `@edx/paragon/icons`. See [Icons Foundation Documentation](/foundations/icons) for a list of all available icons.
 
-```jsx live
+```jsx live=true
 // Included in this live jsx scope:
 // import { Add, AddCircle } from '@edx/paragon/icons';
 <Icon src={Add} />
@@ -21,7 +21,7 @@ Displays an svg icon from `@edx/paragon/icons`. See [Icons Foundation Documentat
 
 HTML attributes can be passed to this component allowing for customization of the color, size, or addition of any necessary ARIA attributes.
 
-```jsx live
+```jsx live=true
 // Included in this live jsx scope:
 // import { Add, AddCircle } from '@edx/paragon/icons';
 <div className="d-flex align-items-center bg-dark">

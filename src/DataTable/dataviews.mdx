@@ -25,7 +25,7 @@ There are currently two built-in options for displaying the data `DataTable.Tabl
 The `Table` component is meant to be rendered within a `DataTableContext` (provided by `DataTable` here).
 It displays the data provided by the `DataTableContext` as an html table.
 
-```jsx live
+```jsx live=true
 <DataTable
   isSelectable
   columns={[
@@ -126,7 +126,7 @@ const instance = useContext(DataTableContext)
 The CardView takes a `CardComponent` that is personalized to the table in question and displays
 a responsive grid of cards.
 
-```jsx live
+```jsx live=true
 <DataTable
   isFilterable
   defaultColumnValues={{ Filter: TextFilter }}

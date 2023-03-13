@@ -26,7 +26,7 @@ Navigation bits in Bootstrap all share a general ``Nav`` component and styles. S
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 () => {
   const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
 

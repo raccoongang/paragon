@@ -18,13 +18,13 @@ Extra props supplied to Input will be passed through to the html node.
 
 ## Text
 
-```jsx live
+```jsx live=true
 <Input type="text" defaultValue="Some text input" />
 ```
 
 ## Select
 
-```jsx live
+```jsx live=true
 <Input
   type="select"
   defaultValue="Foo Bar"
@@ -48,7 +48,7 @@ Extra props supplied to Input will be passed through to the html node.
 
 ## Textarea
 
-```jsx live
+```jsx live=true
 <Input
   type="textarea"
   defaultValue="Hammock semiotics pok pok jianbing venmo, crucifix taiyaki stumptown irony ennui knausgaard bitters synth slow-carb iPhone."
@@ -57,18 +57,18 @@ Extra props supplied to Input will be passed through to the html node.
 
 ## Date
 
-```jsx live
+```jsx live=true
 <Input type="date" />
 ```
 
 ### File
 
-```jsx live
+```jsx live=true
 <Input type="file" />
 ```
 
 ### Range
 
-```jsx live
+```jsx live=true
 <Input type="range" />
 ```

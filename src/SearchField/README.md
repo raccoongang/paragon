@@ -21,7 +21,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <SearchField
   onSubmit={value => console.log(`search submitted: ${value}`)}
 />
@@ -29,7 +29,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## With an initial value
 
-```jsx live
+```jsx live=true
 <SearchField
   onSubmit={value => console.log(`search submitted: ${value}`)}
   value="foobar"
@@ -38,7 +38,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## With a placeholder
 
-```jsx live
+```jsx live=true
 <SearchField
   onSubmit={value => console.log(`search submitted: ${value}`)}
   placeholder="foobar"
@@ -47,7 +47,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## With callbacks
 
-```jsx live
+```jsx live=true
 <SearchField
   onSubmit={value => console.log(`search submitted: ${value}`)}
   onChange={value => console.log(`value changed: ${value}`)}
@@ -59,7 +59,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## With a custom label
 
-```jsx live
+```jsx live=true
 <SearchField
   onSubmit={value => console.log(`search submitted: ${value}`)}
   label="Search:"
@@ -68,7 +68,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## With custom screenreader text
 
-```jsx live
+```jsx live=true
 <SearchField
   onSubmit={value => console.log(`search submitted: ${value}`)}
   screenReaderText={{
@@ -81,7 +81,7 @@ Search allows users to quickly find content. The ``Search field`` is made up of 
 
 ## With the submit button outside the input
 
-```jsx live
+```jsx live=true
 <SearchField
   submitButtonLocation="external"
   onSubmit={value => console.log(`search submitted: ${value}`)}
@@ -94,7 +94,7 @@ For needs that deviate from the basic usage above, use `<SearchField.Advanced />
 
 ## With a custom label
 
-```jsx live
+```jsx live=true
 <SearchField.Advanced
   onSubmit={value => console.log(`search submitted: ${value}`)}
 >
@@ -107,7 +107,7 @@ For needs that deviate from the basic usage above, use `<SearchField.Advanced />
 
 ## With an initial value
 
-```jsx live
+```jsx live=true
 <SearchField.Advanced
   onSubmit={value => console.log(`search submitted: ${value}`)}
   value="foobar"
@@ -121,7 +121,7 @@ For needs that deviate from the basic usage above, use `<SearchField.Advanced />
 
 ## With a placeholder
 
-```jsx live
+```jsx live=true
 <SearchField.Advanced
   onSubmit={value => console.log(`search submitted: ${value}`)}
 >
@@ -134,7 +134,7 @@ For needs that deviate from the basic usage above, use `<SearchField.Advanced />
 
 ## With no clear button
 
-```jsx live
+```jsx live=true
 <SearchField.Advanced
   onSubmit={value => console.log(`search submitted: ${value}`)}
 >
@@ -146,7 +146,7 @@ For needs that deviate from the basic usage above, use `<SearchField.Advanced />
 
 ## With no submit or clear buttons
 
-```jsx live
+```jsx live=true
 <SearchField.Advanced
   onSubmit={value => console.log(`search submitted: ${value}`)}
 >
@@ -159,7 +159,7 @@ For needs that deviate from the basic usage above, use `<SearchField.Advanced />
 
 Use class `pgn__searchfield_wrapper` to group input elements apart from the submit button.
 
-```jsx live
+```jsx live=true
 <SearchField.Advanced
   onSubmit={value => console.log(`search submitted: ${value}`)}
   submitButtonLocation="external"

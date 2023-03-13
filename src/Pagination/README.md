@@ -19,7 +19,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Basic usage (Default Size)
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={20}
@@ -29,7 +29,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Secondary
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={20}
@@ -40,7 +40,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Reduced
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={20}
@@ -51,7 +51,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Minimal
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={5}
@@ -62,7 +62,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Basic usage (Small Size)
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={20}
@@ -73,7 +73,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Secondary
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={20}
@@ -85,7 +85,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Reduced
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={20}
@@ -97,7 +97,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Minimal
 
-```jsx live
+```jsx live=true
 <Pagination
   paginationLabel="pagination navigation"
   pageCount={5}
@@ -109,7 +109,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Inverse Pallete (Default Size)
 
-```jsx live
+```jsx live=true
 <div className="bg-dark-700 p-4">
   <Pagination
     paginationLabel="pagination navigation"
@@ -136,7 +136,7 @@ Navigation between multiple pages of some set of results. Controls are provided 
 
 ## Inverse Pallete (Small Size)
 
-```jsx live
+```jsx live=true
 <div className="bg-dark-700 p-4">
   <Pagination
     paginationLabel="pagination navigation"

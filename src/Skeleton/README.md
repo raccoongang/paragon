@@ -19,7 +19,7 @@ You can read more about ``Skeleton`` on the [official documentation repository](
 For convenient customization of the loading component, **width** and **height** properties are available, 
 you can also set the number of columns in the displayed ``Skeleton``.
 
-```jsx live
+```jsx live=true
 () => {
   const [isChecked, setChecked] = useState(true);
   const handleChange = e => setChecked(e.target.checked);
@@ -49,7 +49,7 @@ you can also set the number of columns in the displayed ``Skeleton``.
 
 ``Skeleton`` is convenient to use with images, including those in a **circle** format.
 
-```jsx live
+```jsx live=true
 () => {
   const [isChecked, setChecked] = useState(true);
   const handleChange = e => setChecked(e.target.checked);
@@ -85,7 +85,7 @@ you can also set the number of columns in the displayed ``Skeleton``.
 ``Skeleton Theme`` allows you to customize the styles of your nested components in a flexible way. 
 Settings will be passed on to the rest of the ``Skeleton`` components in the hierarchy.
 
-```jsx live
+```jsx live=true
 () => {
   const [isChecked, setChecked] = useState(true);
   const handleChange = e => setChecked(e.target.checked);
@@ -126,7 +126,7 @@ Settings will be passed on to the rest of the ``Skeleton`` components in the hie
 
 By wrapping the ``Skeleton`` in a container, you can flexibly customize the elements of the skeleton.
 
-```jsx live
+```jsx live=true
 () => {
   const [isChecked, setChecked] = useState(true);
   const handleChange = e => setChecked(e.target.checked);

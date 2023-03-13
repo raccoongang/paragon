@@ -15,7 +15,7 @@ notes: ''
 To enable item navigation using the arrow keyboard specifies the CSS selectors string that indicates to which elements
 the user can navigate.
 
-```jsx live
+```jsx live=true
 () => {
   const parentRef = useArrowKeyNavigation({
     selectors: 'a:not(:disabled),button:not(:disabled),input:not(:disabled)',
@@ -38,7 +38,7 @@ To disable listening for keystrokes, use `ignoreKeys` to add ignored keys to the
 For example, you have the ability to navigate through the inputs using the `arrowUp` and `arrowDown` keys;
 the `arrowUp` and `arrowLeft` keys can be ignored for convenient editing of the text in the inputs.
 
-```jsx live
+```jsx live=true
 () => {
   const parentRef = useArrowKeyNavigation({
     selectors: 'a:not(:disabled),button:not(:disabled),input:not(:disabled)',

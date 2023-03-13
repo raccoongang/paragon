@@ -24,7 +24,7 @@ A spinning animation that indicates loading.
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   <Spinner animation="border" className="mie-3" screenReaderText="loading" />
   <Spinner animation="grow" className="mie-3" screenReaderText="loading" />
@@ -32,7 +32,7 @@ A spinning animation that indicates loading.
 ```
 ## Color Variants
 
-```jsx live
+```jsx live=true
 () => {
   const variants = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];
   return variants.map((variant) => (

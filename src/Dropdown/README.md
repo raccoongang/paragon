@@ -24,7 +24,7 @@ notes: |
 </p>
 
 ## Basic Usage
-```jsx live
+```jsx live=true
 <DropdownButton id="dropdown-basic-button" title="Dropdown button">
   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
   <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
@@ -34,7 +34,7 @@ notes: |
 
 ## Advanced Usage
 
-```jsx live
+```jsx live=true
 <>
   <Dropdown onToggle={(isOpen, event, metadata) => console.log('debug', 'onToggle', { isOpen, event, metadata })} className="mb-3">
     <Dropdown.Toggle variant="success" id="dropdown-basic-1">
@@ -104,7 +104,7 @@ notes: |
 
 You can use `Dropdown.Toggle` with [IconButton](/components/iconbutton) component, note that all props you provide to `Dropdown.Toggle` will get passed down to the `IconButton`.
 
-```jsx live
+```jsx live=true
 <Dropdown>
   <Dropdown.Toggle
     id="dropdown-toggle-with-iconbutton"
@@ -125,7 +125,7 @@ You can use `Dropdown.Toggle` with [IconButton](/components/iconbutton) componen
 
 ## Dropdown.Deprecated
 
-```jsx live
+```jsx live=true
 <Dropdown.Deprecated>
   <Dropdown.Deprecated.Button>
     Search Engines
@@ -140,7 +140,7 @@ You can use `Dropdown.Toggle` with [IconButton](/components/iconbutton) componen
 
 ### with icon element
 
-```jsx live
+```jsx live=true
 <Dropdown.Deprecated>
   <Dropdown.Deprecated.Button>
     <Icon className="fa fa-user pr-3" alt="" />
@@ -156,7 +156,7 @@ You can use `Dropdown.Toggle` with [IconButton](/components/iconbutton) componen
 
 ### (Deprecated) basic usage
 
-```jsx live
+```jsx live=true
 <Dropdown.Deprecated
   title="Search Engines"
   menuItems={[
@@ -178,7 +178,7 @@ You can use `Dropdown.Toggle` with [IconButton](/components/iconbutton) componen
 
 ### (Deprecated) menu items as elements
 
-```jsx live
+```jsx live=true
 <Dropdown.Deprecated
   title="Search Engines"
   menuItems={[
@@ -191,7 +191,7 @@ You can use `Dropdown.Toggle` with [IconButton](/components/iconbutton) componen
 
 ### (Deprecated) with icon element
 
-```jsx live
+```jsx live=true
 <Dropdown.Deprecated
   title="Search Engines"
   iconElement={<Icon className="fa fa-user pr-3" />}

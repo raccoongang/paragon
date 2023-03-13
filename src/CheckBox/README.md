@@ -14,7 +14,7 @@ notes: |
 
 ## Basic usage
 
-```jsx live
+```jsx live=true
 <CheckBox
   name="checkbox"
   label="check me out!"
@@ -23,7 +23,7 @@ notes: |
 
 ## Disabled
 
-```jsx live
+```jsx live=true
 <CheckBox
   name="checkbox"
   label="you cannot check me out"
@@ -33,7 +33,7 @@ notes: |
 
 ## Default checked
 
-```jsx live
+```jsx live=true
 <CheckBox
   name="checkbox"
   label="(un)check me out"
@@ -43,7 +43,7 @@ notes: |
 
 ## Call a function
 
-```jsx live
+```jsx live=true
 <CheckBox
   name="checkbox"
   label="check out the console"
@@ -53,7 +53,7 @@ notes: |
 
 ## Controlled example
 
-```jsx live
+```jsx live=true
 class CheckBoxWrapper extends React.Component {
   constructor(props) {
     super(props);

@@ -16,7 +16,7 @@ notes: |
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   {['top', 'right', 'bottom', 'left'].map((placement) => (
     <OverlayTrigger
@@ -36,7 +36,7 @@ notes: |
 
 ## Light version
 
-```jsx live
+```jsx live=true
 <div className="bg-dark-700 p-4">
   {['top', 'right', 'bottom', 'left'].map((placement) => (
     <OverlayTrigger

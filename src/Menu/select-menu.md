@@ -18,7 +18,7 @@ The ``Modal`` brings focus to the first menu element upon the click of the trigg
 
 ### Basic usage
 
-```jsx live
+```jsx live=true
 <SelectMenu>
   <MenuItem>A Menu Item</MenuItem>
   <MenuItem iconBefore={Add}>A Menu Item With an Icon Before</MenuItem>
@@ -30,7 +30,7 @@ The ``Modal`` brings focus to the first menu element upon the click of the trigg
 
 #### Linked variant
 
-```jsx live
+```jsx live=true
 <SelectMenu isLink={true} defaultMessage="Choose Your New Best Friend">
   <MenuItem>Falstaff</MenuItem>
   <MenuItem>Scipio</MenuItem>

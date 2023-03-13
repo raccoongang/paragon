@@ -14,7 +14,7 @@ notes: |
 
 ## Example Usage
 
-```jsx live
+```jsx live=true
 class ModalWrapper extends React.Component {
   constructor(props) {
     super(props);

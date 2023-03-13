@@ -15,7 +15,7 @@ notes: |
 
 ## minimal usage
 
-```jsx live
+```jsx live=true
 <Hyperlink destination="https://www.edx.org">
   edX.org
 </Hyperlink>
@@ -23,7 +23,7 @@ notes: |
 
 ## with blank target
 
-```jsx live
+```jsx live=true
 <Hyperlink destination="https://www.edx.org" target="_blank">
   edX.org
 </Hyperlink>
@@ -31,7 +31,7 @@ notes: |
 
 ### blank target without Icon
 
-```jsx live
+```jsx live=true
 <Hyperlink destination="https://www.edx.org" target="_blank" showLaunchIcon={false}>
   edX.org
 </Hyperlink>
@@ -39,7 +39,7 @@ notes: |
 
 ## with onClick
 
-```jsx live
+```jsx live=true
 <Hyperlink
   destination="https://www.edx.org"
   target="_blank"
@@ -54,7 +54,7 @@ notes: |
 
 ## with icon
 
-```jsx live
+```jsx live=true
 <Hyperlink destination="https://www.edx.org">
   <Icon
     id="SampleIcon"
@@ -66,7 +66,7 @@ notes: |
 
 ## color variants
 
-```jsx live
+```jsx live=true
 <div className="d-flex flex-column">
     <Hyperlink destination="https://www.edx.org">
       Default
@@ -84,7 +84,7 @@ notes: |
 
 ## link variants
 
-```jsx live
+```jsx live=true
 <div className="row">
   <div className="col-2">
     <Hyperlink destination="https://www.edx.org">

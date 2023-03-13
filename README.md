@@ -330,7 +330,7 @@ Describe your component here and give usage examples.
 
 ### Basic Usage
 
-```jsx live
+```jsx live=true
 <MyComponent>
   Hello!
 </MyComponent>

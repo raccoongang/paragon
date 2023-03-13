@@ -14,7 +14,7 @@ notes: |
 
 ## basic usage
 
-```jsx live
+```jsx live=true
 <InputSelect
   name="fruits"
   label="Fruits"
@@ -30,7 +30,7 @@ notes: |
 
 ## separate labels and values
 
-```jsx live
+```jsx live=true
 <InputSelect
   name="new-england-states"
   label="New England States"
@@ -48,7 +48,7 @@ notes: |
 
 ## separate option groups
 
-```jsx live
+```jsx live=true
 <InputSelect
   name="northeast-states"
   label="Northeast States"
@@ -84,7 +84,7 @@ notes: |
 
 ## with validation
 
-```jsx live
+```jsx live=true
 <InputSelect
   name="color"
   label="Favorite Color"
@@ -104,7 +104,7 @@ notes: |
 
 ## disabled usage
 
-```jsx live
+```jsx live=true
 <InputSelect
   name="fruits"
   label="Fruits"
@@ -122,7 +122,7 @@ notes: |
 
 ## with disabled option
 
-```jsx live
+```jsx live=true
 <InputSelect
   name="fruits"
   label="Fruits"

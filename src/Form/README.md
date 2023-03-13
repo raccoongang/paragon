@@ -19,7 +19,7 @@ notes: |
 
 ## Floating Labels
 
-```jsx live
+```jsx live=true
 <Form>
   <Form.Row>
     <Form.Group as={Col} controlId="formGridEmail">
@@ -108,7 +108,7 @@ notes: |
 
 ## Regular Labels
 
-```jsx live
+```jsx live=true
 <Form>
   <Form.Row>
     <Form.Group as={Col} controlId="formGridEmail-2">

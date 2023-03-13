@@ -15,7 +15,7 @@ notes: |
 This component utilizes `Button` from React-Bootstrap and extends it with an ability to add icons before and after button label, see [below](#with-icons-before-or-after) for usage example.<br/> <a href="https://react-bootstrap.github.io/components/buttons/" target="_blank" rel="noopener noreferrer"> See React-Bootstrap for additional documentation. </a>
 
 ## Core Buttons
-```jsx live
+```jsx live=true
 <>
   <Button variant="brand" className="mb-2 mb-sm-0">Brand</Button>{' '}
   <Button variant="outline-brand" className="mb-2 mb-sm-0">Outline Brand</Button>{' '}
@@ -25,7 +25,7 @@ This component utilizes `Button` from React-Bootstrap and extends it with an abi
 </>
 ```
 ## Core Buttons (Inverse Pallete)
-```jsx live
+```jsx live=true
 <div className="bg-dark-700 p-4">
   <Button variant="inverse-brand" className="mb-2 mb-sm-0">Brand</Button>{' '}
   <Button variant="inverse-outline-brand" className="mb-2 mb-sm-0">Outline Brand</Button>{' '}
@@ -36,7 +36,7 @@ This component utilizes `Button` from React-Bootstrap and extends it with an abi
 ```
 
 ## Utility Buttons
-```jsx live
+```jsx live=true
 <>
   <div className="mb-2">
     <Button variant="success" className="mb-2 mb-sm-0">Success</Button>{' '}
@@ -56,7 +56,7 @@ This component utilizes `Button` from React-Bootstrap and extends it with an abi
 
 ## Size
 
-```jsx live
+```jsx live=true
 <>
   <div className="mb-2">
     <Button variant="primary" size="lg" className="mb-2 mb-sm-0">
@@ -85,7 +85,7 @@ This component utilizes `Button` from React-Bootstrap and extends it with an abi
 
 Use inline size buttons for when a button sits with a line of text.
 
-```jsx live
+```jsx live=true
 <>
   <p>
     <span className="mr-1">2 items selected.</span>
@@ -97,7 +97,7 @@ Use inline size buttons for when a button sits with a line of text.
 
 ## Block Buttons
 
-```jsx live
+```jsx live=true
 <>
   <Button variant="primary" size="lg" block>
     Block level button
@@ -110,7 +110,7 @@ Use inline size buttons for when a button sits with a line of text.
 
 ### Disabled
 
-```jsx live
+```jsx live=true
 <>
   <Button variant="primary" disabled>Primary disabled</Button>
   <Button variant="secondary" disabled>Secondary disabled</Button>
@@ -120,7 +120,7 @@ Use inline size buttons for when a button sits with a line of text.
 
 For link to be `disabled`, it must have href defined with some value.
 
-```jsx live
+```jsx live=true
 <>
   <Button as='a' disabled>No href</Button>
   <Button as='a' href='' disabled>Empty string href</Button>
@@ -128,7 +128,7 @@ For link to be `disabled`, it must have href defined with some value.
 ```
 
 ### With Icons before or after
-```jsx live
+```jsx live=true
 <>
   <Button variant="brand" iconBefore={ArrowBack} className="mb-2 mb-sm-0">
     Brand
@@ -149,7 +149,7 @@ For link to be `disabled`, it must have href defined with some value.
 ```
 
 ### With a Spinner
-```jsx live
+```jsx live=true
 <>
   <Button variant="primary" className="mb-2 mr-2 mb-sm-0" aria-label="Loading some stuff">
     <Spinner animation="border" />
@@ -178,13 +178,13 @@ For link to be `disabled`, it must have href defined with some value.
 
 ### Basic Usage
 
-```jsx live
+```jsx live=true
 <Button.Deprecated className="btn-primary">Hello World!</Button.Deprecated>
 ```
 
 ### Color Variants
 
-```jsx live
+```jsx live=true
 <div>
   <Button.Deprecated className="btn-primary">Primary</Button.Deprecated>
   <Button.Deprecated className="btn-success">Success</Button.Deprecated>
@@ -196,7 +196,7 @@ For link to be `disabled`, it must have href defined with some value.
 
 ### Outline Variants
 
-```jsx live
+```jsx live=true
 <div>
   <Button.Deprecated className="btn-outline-primary">Primary</Button.Deprecated>
   <Button.Deprecated className="btn-outline-success">Success</Button.Deprecated>
@@ -206,7 +206,7 @@ For link to be `disabled`, it must have href defined with some value.
 
 ### Inverse Variants
 
-```jsx live
+```jsx live=true
 <div className="bg-gray-700 p-3">
   <Button.Deprecated className="btn-inverse-primary">Primary</Button.Deprecated>
   <Button.Deprecated className="btn-inverse-success">Success</Button.Deprecated>
@@ -216,7 +216,7 @@ For link to be `disabled`, it must have href defined with some value.
 
 ### Link Variant
 
-```jsx live
+```jsx live=true
 <div className="bg-gray-200 p-3">
   <Button.Deprecated className="btn-link">Link with button container</Button.Deprecated>
   <br />

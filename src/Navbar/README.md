@@ -25,7 +25,7 @@ A powerful, responsive navigation header, the navbar. Includes support for brand
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />

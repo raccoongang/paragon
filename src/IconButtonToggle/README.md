@@ -18,7 +18,7 @@ When one presses on one of the buttons, that button is set to active state, and 
 You can pass a tooltip if you use the ``IconButtonWithTooltip`` subcomponent.
 
 ## Basic Usage
-```jsx live
+```jsx live=true
     () => {
       const [activeValue, setActiveValue] = React.useState('card');
       return (
@@ -34,7 +34,7 @@ You can pass a tooltip if you use the ``IconButtonWithTooltip`` subcomponent.
 ```
 
 ## Basic Usage (with tooltips)
-```jsx live
+```jsx live=true
     () => {
       const [activeValue, setActiveValue] = React.useState('card');
       return (
