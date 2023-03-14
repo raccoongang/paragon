@@ -51,7 +51,7 @@
     "build": "gatsby build --prefix-paths && npm run build-themes",
     "build:with-theme": "npm run build",
     "clean": "gatsby clean",
-    "develop": "npm run build-themes && gatsby develop",
+    "develop": "npm run build-themes && NODE_OPTIONS=--max-old-space-size=8192 gatsby develop",
     "develop:with-theme": "npm run develop",
     "lint": "eslint --ext .js --ext .jsx .",
     "start": "npm run develop",
