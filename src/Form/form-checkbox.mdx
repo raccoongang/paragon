@@ -23,7 +23,7 @@ underlying `input` node. See MDN for documentation on available
 
 ## Controlled Standalone Usage
 
-```jsx live
+```jsx live=true
 () => {
   const [isChecked, setChecked] = useState(false);
   const handleChange = e => setChecked(e.target.checked);
@@ -37,7 +37,7 @@ underlying `input` node. See MDN for documentation on available
 
 ## Unlabeled control
 
-```jsx live
+```jsx live=true
 () => {
   const [isChecked, setChecked] = useState(false);
   const handleChange = e => setChecked(e.target.checked);
@@ -57,7 +57,7 @@ underlying `input` node. See MDN for documentation on available
 
 `dispatchers` includes `add(value)` `remove(value)` `set(values[])` and `clear()`
 
-```jsx live
+```jsx live=true
 () => {
 
   const [colorValues, { add, remove }] = useCheckboxSetValues(['green']);
@@ -91,7 +91,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Uncontrolled Usage
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.Label>Which Color?</Form.Label>
   <Form.CheckboxSet
@@ -109,7 +109,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Indeterminate Usage
 
-```jsx live
+```jsx live=true
 () => {
   const allCheeseOptions = ['swiss', 'cheddar', 'pepperjack'];
   const [checkedCheeses, { add, remove, set, clear }] = useCheckboxSetValues(['swiss']);
@@ -154,7 +154,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Inline layout
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.Label>Which Color?</Form.Label>
   <Form.CheckboxSet
@@ -175,7 +175,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Group Level Validation
 
-```jsx live
+```jsx live=true
 <Form.Group isInvalid>
   <Form.Label>Which Color?</Form.Label>
   <Form.CheckboxSet
@@ -195,7 +195,7 @@ underlying `input` node. See MDN for documentation on available
 
 ### Individual option validation
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.Label>Which Color?</Form.Label>
   <Form.CheckboxSet name="color-four">
@@ -234,7 +234,7 @@ underlying `input` node. See MDN for documentation on available
 The label is positioned to the right of the checkbox control by default. The label can be rendered on the left instead
 by passing the `floatLabelLeft` prop.
 
-```jsx live
+```jsx live=true
 <Form.Group>
   <Form.CheckboxSet name="color-single">
     <Form.Checkbox value="red" floatLabelLeft>Red</Form.Checkbox>

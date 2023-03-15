@@ -20,7 +20,7 @@ controlId if none is supplied and offers `size`, `isInvalid`, `isValid` in the
 context. `Form.Control`, `Form.Label`, and `Form.Control.Feedback` consume this context.
 
 
-```jsx live
+```jsx live=true
   <Form.Group
     isInvalid
     controlId="explicit-id-1"
@@ -31,7 +31,7 @@ context. `Form.Control`, `Form.Label`, and `Form.Control.Feedback` consume this 
   </Form.Group>
 ```
 
-```jsx live
+```jsx live=true
   <Form.Group
     isValid
     controlId="explicit-id-2"
@@ -44,7 +44,7 @@ context. `Form.Control`, `Form.Label`, and `Form.Control.Feedback` consume this 
 
 ## Sizes
 
-```jsx live
+```jsx live=true
 () => {
   const [value, setValue] = useState('');
   const handleChange = (e) => setValue(e.target.value);

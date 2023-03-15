@@ -49,7 +49,7 @@ In this example, a default TextFilter component is used for all columns. A defau
 or a filter component can be defined on the column. See <a href="https://react-table.tanstack.com/docs/api/useFilters">react-table filters documentation</a>
 for more information.
 
-```jsx live
+```jsx live=true
   <DataTable
     isPaginated
     isSelectable
@@ -161,7 +161,7 @@ To enable proper selection behavior with backend pagination (i.e., when ``isSele
 
 <strong>NOTE:</strong> While the below example doesn't demonstrate using true backend filtering, pagination, and sorting, it does mock the behavior of making an asynchronous API request and updating the table data.
 
-```jsx live
+```jsx live=true
 () => {
   const PAGINATED_DATA = [
     [
@@ -315,7 +315,7 @@ See ``dataViewToggleOptions`` props documentation for all supported props.
 
 **NOTE**: you have to memoize ``data`` to persist filters choices during view switch, see code example below.
 
-```jsx live
+```jsx live=true
 () => {
   const [currentView, setCurrentView] = useState('card');
   const togglePlacement = 'left'; // 'bottom' is the only other supported value
@@ -422,7 +422,7 @@ See ``dataViewToggleOptions`` props documentation for all supported props.
 
 ### With a default active state specified
 
-```jsx live
+```jsx live=true
 () => {
   const defaultVal = "list";
   const [currentView, setCurrentView] = useState(defaultVal);
@@ -509,7 +509,7 @@ See ``dataViewToggleOptions`` props documentation for all supported props.
 
 Can be used to show the loading state when ``DataTable`` is asynchronously fetching new data.
 
-```jsx live
+```jsx live=true
 () => {
   {/* start example state */}
   const [hasData, setHasData] = useState(false)
@@ -598,7 +598,7 @@ any component that a user requires. It will receive the row as props.
 You can pass a function to render custom components for bulk actions and table actions.
 
 
-```jsx live
+```jsx live=true
 () => {
   const TableAction = ({ tableInstance }) => (
     // Here is access to the tableInstance
@@ -712,7 +712,7 @@ You can pass a function to render custom components for bulk actions and table a
 #### Actions with Data view toggle enabled
 
 
-```jsx live
+```jsx live=true
 () => {
   const [currentView, setCurrentView] = useState('card');
 
@@ -842,7 +842,7 @@ const instance = useContext(DataTableContext)
 The CardView takes a ``CardComponent`` that is personalized to the table in question and displays
 a responsive grid of cards.
 
-```jsx live
+```jsx live=true
 () => {
   const DownloadCSVAction = ({ as: Component, selectedFlatRows, ...rest }) => (
     <Component onClick={() => console.log('Download CSV', selectedFlatRows, rest)}>
@@ -1069,7 +1069,7 @@ Use `columnSizes` prop of `CardView` component to define how many `Cards` are sh
 
 `columnSizes` is an object containing the desired column size at each breakpoint. The example below shows 1 `Card` per row at `xs` breakpoint, 2 `Cards` at `sm` and `md`, and 4 `Cards` at `lg` and higher. You can read more about the API at https://react-bootstrap.netlify.app/layout/grid/.
 
-```jsx live
+```jsx live=true
 () => {
   const columnSizes = { xs: 12, sm: 6, lg: 3 };
 
@@ -1153,7 +1153,7 @@ Use `columnSizes` prop of `CardView` component to define how many `Cards` are sh
 ### Horizontal view
 You can also display `Cards` with horizontal view. If the table is selectable control position of selection checkbox with `selectionPlacement` prop, accepts `right` or `left` positions (relative to the `Card`).
 
-```jsx live
+```jsx live=true
 () => {
   const columnSizes = { xs: 12 };
 
@@ -1227,7 +1227,7 @@ You can also display `Cards` with horizontal view. If the table is selectable co
 ## Sidebar Filter
 For a more desktop friendly view, you can move filters into a sidebar by providing ``showFiltersInSidebar`` prop, try it out!
 
-```jsx live
+```jsx live=true
   <DataTable
     showFiltersInSidebar
     isFilterable
@@ -1316,7 +1316,7 @@ Finally, an additional column is required to be included into `columns` prop whi
 
 Here we use default expander column offered by Paragon and for each row render value of the `name` attribute as its subcomponent.
 
-```jsx live
+```jsx live=true
 <DataTable 
   isExpandable
   itemCount={7}
@@ -1388,7 +1388,7 @@ Here we use default expander column offered by Paragon and for each row render v
 
 You can create your own custom expander column and use it, see code example below.
 
-```jsx live
+```jsx live=true
 () => {
   const expanderColumn = {
     id: 'expander',
@@ -1494,7 +1494,7 @@ You can create your own custom expander column and use it, see code example belo
 
 You can create your own cell content by passing the `Cell` property to a specific column.
 
-```jsx live
+```jsx live=true
 () => {
   const variants = ['primary', 'warning', 'success', 'danger'];
   const [cellColors, setCellColors] = useState([0, 1, 2]);

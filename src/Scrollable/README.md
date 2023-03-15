@@ -25,7 +25,7 @@ If you don't specify height you will get a default height per the Scrollable com
 
 ## Basic usage of scrollable with provided height
 
-```jsx live
+```jsx live=true
 <Scrollable id="test" style={{'height': '40vh'}}>
   <p>Do not use overflow in wrapped component, Scrollable provides overflow:auto around wrapped element</p>
   <p>A very long scrollable Content.</p>
@@ -69,7 +69,7 @@ If you don't specify height you will get a default height per the Scrollable com
 
 ## With padding used by consumer
 
-```jsx live
+```jsx live=true
 <Scrollable style={{'height': '40vh'}}>
   <div className="p-4">
     <p>Do not use overflow in wrapped component, Scrollable provides overflow:auto around wrapped element</p>

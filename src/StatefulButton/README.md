@@ -15,7 +15,7 @@ The stateful button is a button used to display an actionable icon.
 
 ## Basic usage
 
-```jsx live
+```jsx live=true
 () => {
   const props = {
     labels: {
@@ -39,7 +39,7 @@ The stateful button is a button used to display an actionable icon.
 
 ## Custom icons and disabled states
 
-```jsx live
+```jsx live=true
 () => {
   const downloadButtonProps = {
     labels: {
@@ -67,7 +67,7 @@ The stateful button is a button used to display an actionable icon.
 
 ## Custom states with Paragon icons
 
-```jsx live
+```jsx live=true
 () => {
   const buttonProps = {
     labels: {

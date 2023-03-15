@@ -28,7 +28,7 @@ The `styling` prop at the top level `<Collapsible />` component determines if th
 
 ### Basic Style
 
-```jsx live
+```jsx live=true
 <Collapsible
   styling="basic"
   title="Toggle Collapsible"
@@ -41,7 +41,7 @@ The `styling` prop at the top level `<Collapsible />` component determines if th
 
 This is the default style if no `styling` prop is supplied.
 
-```jsx live
+```jsx live=true
 () => {
   const [styling, setStyling] = useState('card');
   const [withIcon, setWithIcon] = useState(false);
@@ -74,14 +74,14 @@ This is the default style if no `styling` prop is supplied.
 
 ### Default Open
 
-```jsx live
+```jsx live=true
 <Collapsible title="I'm not a heading" defaultOpen>
   <p>Your stuff goes here.</p>
 </Collapsible>
 ```
 ### With Callbacks
 
-```jsx live
+```jsx live=true
 <Collapsible
   title="Toggle Collapsible"
   defaultOpen
@@ -101,7 +101,7 @@ For needs that deviate from the three styles above, use `<Collapsible.Advanced /
 
 ### Bare minimum
 
-```jsx live
+```jsx live=true
 <Collapsible.Advanced>
   <Collapsible.Trigger>
     Toggle Collapsible
@@ -114,7 +114,7 @@ For needs that deviate from the three styles above, use `<Collapsible.Advanced /
 
 ### Card style with advanced usage
 
-```jsx live
+```jsx live=true
 <Collapsible.Advanced className="collapsible-card">
   <Collapsible.Trigger className="collapsible-trigger d-flex">
     <span className="flex-grow-1">This is the title</span>
@@ -130,7 +130,7 @@ For needs that deviate from the three styles above, use `<Collapsible.Advanced /
 
 ### With a close button
 
-```jsx live
+```jsx live=true
 <Collapsible.Advanced className="collapsible-card" defaultOpen>
   <Collapsible.Trigger className="collapsible-trigger d-flex">
     <span className="flex-grow-1">This is the title</span>
@@ -153,7 +153,7 @@ For needs that deviate from the three styles above, use `<Collapsible.Advanced /
 
 See the developer console for logging.
 
-```jsx live
+```jsx live=true
 <Collapsible.Advanced
   className="collapsible-card-lg"
   onToggle={(isOpen) => console.log('Collapsible toggled and open is: ', isOpen)}
@@ -184,7 +184,7 @@ See the developer console for logging.
 
 ### Controlled usage
 
-```jsx live
+```jsx live=true
 function() {
   const [collapseIsOpen, setCollapseOpen] = React.useState(true);
 

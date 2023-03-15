@@ -14,7 +14,7 @@ notes: |
 
 ## unstyled
 
-```jsx live
+```jsx live=true
 <Table
   data={[
     {
@@ -79,7 +79,7 @@ notes: |
 
 ## table-striped
 
-```jsx live
+```jsx live=true
 <Table
   data={[
     {
@@ -145,7 +145,7 @@ notes: |
 
 ## default heading
 
-```jsx live
+```jsx live=true
 <Table
   data={[
     {
@@ -211,7 +211,7 @@ notes: |
 
 ## responsive
 
-```jsx live
+```jsx live=true
 <Table
   data={[
     {
@@ -277,7 +277,7 @@ notes: |
 
 ## sortable
 
-```jsx live
+```jsx live=true
 () => {
   const catData = [
     {
@@ -375,7 +375,7 @@ notes: |
 
 ## fixed
 
-```jsx live
+```jsx live=true
 <Table
   data={[
     {
@@ -441,7 +441,7 @@ notes: |
 
 ## row header
 
-```jsx live
+```jsx live=true
 <Table
   data={[
     {

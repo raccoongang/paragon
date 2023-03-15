@@ -3,6 +3,25 @@ require('dotenv').config({
 });
 const rehypeSlugPlugin = require('rehype-slug');
 const rehypeAutolinkHeadingsPlugin = require('rehype-autolink-headings');
+const vs = require('unist-util-visit');
+
+/** @type {import('unified').Plugin<Array<void>, import('hast').Root>} */
+function rehypeMetaAsAttributes() {
+  const re = /\b([-\w]+)(?:=(?:"([^"]*)"|'([^']*)'|([^"'\s]+)))?/g
+  return (tree) => {
+    vs(tree, 'element', (node) => {
+      let match
+      if (node.tagName === 'code' && node.data && node.data.meta) {
+        re.lastIndex = 0 // Reset regex.
+
+        while ((match = re.exec(node.data.meta))) {
+          node.properties[match[1]] = match[2] || match[3] || match[4] || ''
+        }
+      }
+
+    })
+  }
+}
 
 const segmentPlugin = {
   resolve: 'gatsby-plugin-segment-js',
@@ -62,40 +81,41 @@ const plugins = [
     resolve: 'gatsby-plugin-mdx',
     options: {
       extensions: ['.mdx', '.md'],
-      defaultLayouts: {
-        components: require.resolve(
-          './src/templates/component-page-template.tsx',
-        ),
-        default: require.resolve(
-          './src/templates/default-mdx-page-template.tsx',
-        ),
-      },
-      rehypePlugins: [
-        rehypeSlugPlugin,
-        [
-          rehypeAutolinkHeadingsPlugin,
-          {
-            behavior: 'append',
-            content: {
-              type: 'element',
-              tagName: 'span',
-              properties: {
-                className: 'pgn-doc__anchor',
+      mdxOptions: {
+        rehypePlugins: [
+          rehypeMetaAsAttributes,
+          rehypeSlugPlugin,
+          [
+            rehypeAutolinkHeadingsPlugin,
+            {
+              behavior: 'append',
+              content: {
+                type: 'element',
+                tagName: 'span',
+                properties: {
+                  className: 'pgn-doc__anchor',
+                },
+                children: [
+                  { type: 'text', value: '#' },
+                ],
               },
-              children: [
-                { type: 'text', value: '#' },
-              ],
             },
-          },
+          ],
         ],
-      ],
+      },
     },
   },
   {
     resolve: 'gatsby-plugin-page-creator',
     options: {
       path: `${__dirname}/src/pages`,
-      ignore: ['insights.tsx'],
+      ignore: ['insights.tsx', '*.mdx'],
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/src/pages`,
     },
   },
 ];

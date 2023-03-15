@@ -14,7 +14,7 @@ A wrapper component that allows to control the size of child blocks on different
 
 ## Basic usage
 
-```jsx live
+```jsx live=true
   <Layout
     lg={[{ span: 4, offset: 0 }, { span: 4, offset: 0 }, { span: 4, offset: 0 }]}
     md={[{ span: 'auto', offset: 0 }, { span: 'auto', offset: 0 }, { span: 'auto', offset: 0 }]}

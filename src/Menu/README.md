@@ -20,7 +20,7 @@ An arrow-key navigable ``Menu`` which consists of ``MenuItems``. A ``Menu`` can 
 
 A ``MenuItem`` is its own distinct component that is used by any kind of menu overlays i.e. dropdown menu and navigation menu.
 
-```jsx live
+```jsx live=true
 () => {
   return (
     <Menu>
@@ -38,7 +38,7 @@ A ``MenuItem`` is its own distinct component that is used by any kind of menu ov
 
 A ``Menu`` can include things like forms.
 
-```jsx live
+```jsx live=true
 () => {
   return (
     <Form.Group>
@@ -62,7 +62,7 @@ A ``Menu`` can include things like forms.
 
 A ``Menu`` can be implemented to appear inside a `modalpopup` for a wide variety of use cases. The ``Modal`` brings focus to the first menu element upon the click of the trigger, and can be escaped on click away or key press.
 
-```jsx live
+```jsx live=true
 () => {
   const [isOpen, open, close] = useToggle(false);
   const [target, setTarget] = React.useState(null);

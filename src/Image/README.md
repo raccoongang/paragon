@@ -20,7 +20,7 @@ notes: |
 
 ## Basic Styles
 
-```jsx live
+```jsx live=true
 <>
   <Image
     className="mr-2"
@@ -45,7 +45,7 @@ notes: |
 
 ## Fluid Sizing
 
-```jsx live
+```jsx live=true
 <Image src="https://picsum.photos/1600/800/" fluid alt="Image description" />
 ```
 

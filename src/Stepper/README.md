@@ -52,7 +52,7 @@ The order of steps is dictated by the order of ``Stepper.Step`` components in th
 
 ``Stepper.Step`` and ``Stepper.ActionRow`` are hidden until their ``eventKey`` props match the ``activeKey`` on ``Stepper``.
 
-```jsx live
+```jsx live=true
 () => {
   const steps = ['welcome', 'choose-cats', 'review'];
   const [currentStep, setCurrentStep] = useState(steps[0]);
@@ -112,7 +112,7 @@ The order of steps is dictated by the order of ``Stepper.Step`` components in th
 
 A composition of a stepper with a `FullscreenModal`.
 
-```jsx live
+```jsx live=true
 () => {
   const steps = ['welcome', 'choose-cats', 'review'];
   const [currentStep, setCurrentStep] = useState(steps[0]);
@@ -184,7 +184,7 @@ A composition of a stepper with a `FullscreenModal`.
 A composition of a stepper with the `hasError` prop. Note that the `index` prop is
 also required for steps to rerender correctly here.
 
-```jsx live
+```jsx live=true
 () => {
   const steps = ['checkbox', 'success'];
   const [currentStep, setCurrentStep] = useState(steps[0]);

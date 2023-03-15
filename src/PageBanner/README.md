@@ -15,7 +15,7 @@ A ``Page Banner`` displays an important, succinct message, and provides actions 
 
 ## Basic Usage Variants
 
-```jsx live
+```jsx live=true
 () => {
     const [showPageBanner, setShowPageBanner] = useState(true);
     const [variant, setVariant] = useState('light');
@@ -60,7 +60,7 @@ A ``Page Banner`` displays an important, succinct message, and provides actions 
 
 The system warning banner is similar to the ``Alert Banner`` banner in styling, except that the text is always default body (14px) and padding has been modified in order to accommodate the ``Page Banner`` component. It cannot be dismissed.
 
-```jsx live
+```jsx live=true
 () => {
   return (
     <>

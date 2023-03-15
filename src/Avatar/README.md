@@ -20,7 +20,7 @@ It is used in the global navigation’s user menu and may also be used to indica
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <div className="bg-light p-2">
   <Avatar size="xxl" />{' '}
   <Avatar size="xl" />{' '}
@@ -34,7 +34,7 @@ It is used in the global navigation’s user menu and may also be used to indica
 
 ## Huge
 
-```jsx live
+```jsx live=true
 <>
   <Avatar size="huge" />
 </>

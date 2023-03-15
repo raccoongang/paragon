@@ -16,7 +16,7 @@ notes: |
 
 ## minimal usage
 
-```jsx live
+```jsx live=true
 <MailtoLink to="edx@example.com">
   edx@example.com
 </MailtoLink>
@@ -24,7 +24,7 @@ notes: |
 
 ## with blank target
 
-```jsx live
+```jsx live=true
 <MailtoLink to="edx@example.com" target="_blank">
   edx@example.com
 </MailtoLink>
@@ -32,7 +32,7 @@ notes: |
 
 ## with onClick
 
-```jsx live
+```jsx live=true
 <MailtoLink
   to="edx@example.com"
   target="_blank"
@@ -44,7 +44,7 @@ notes: |
 
 ## with subject and body
 
-```jsx live
+```jsx live=true
 <MailtoLink
   to="edx@example.com"
   subject="Check out this mailto component!"
@@ -56,7 +56,7 @@ notes: |
 
 ## with cc and bcc
 
-```jsx live
+```jsx live=true
 <MailtoLink
   cc="edx@example.com"
   bcc="edx@example.com"
@@ -67,7 +67,7 @@ notes: |
 
 ## with multiple cc and bcc
 
-```jsx live
+```jsx live=true
 <MailtoLink
   cc={['foo@example.com', 'bar@example.com', 'baz@example.com']}
   bcc={['foo@example.com', 'bar@example.com', 'baz@example.com']}

@@ -19,7 +19,7 @@ notes: |
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <Figure>
   <Figure.Image
     alt="nature flower"

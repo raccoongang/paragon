@@ -22,7 +22,7 @@ Try using <Link to="/components/modal/modal-popup/">ModalPopup</Link> instead if
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   {['top', 'right', 'bottom', 'left'].map((placement) => (
     <OverlayTrigger
@@ -46,7 +46,7 @@ Try using <Link to="/components/modal/modal-popup/">ModalPopup</Link> instead if
 
 ## State variants
 
-```jsx live
+```jsx live=true
 <>
   <OverlayTrigger
     trigger="click"

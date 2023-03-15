@@ -28,7 +28,7 @@ This component uses a `Card` from react-bootstrap as a base component and extend
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -55,7 +55,7 @@ This component uses a `Card` from react-bootstrap as a base component and extend
 
 Use `variant` prop to use `Card` specific style variant.
 
-```jsx live
+```jsx live=true
 () => {
   const [cardVariant, setCardVariant] = useState('light');
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
@@ -95,7 +95,7 @@ Use `variant` prop to use `Card` specific style variant.
 
 You use `isClickable` prop to add additional `hover` and `focus` styling to the `Card`.
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -122,7 +122,7 @@ You use `isClickable` prop to add additional `hover` and `focus` styling to the 
 You can also use `Card` as a link by wrapping it into appropriate component, note that `Card` will override default 
 link styling to make its content appear as a regular text.
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -150,7 +150,7 @@ link styling to make its content appear as a regular text.
 You may add a header by adding a ``Card.Header`` component.
 This header displays a title, subtitle, and may contain actions.
 
-```jsx live
+```jsx live=true
 <div>
   <Card className="mb-2">
     <Card.Header title="Title" />
@@ -167,7 +167,7 @@ This header displays a title, subtitle, and may contain actions.
 ### Actions
 The `Card.Header` supports custom actions via the actions prop and renders them on the top right of the header.
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -220,7 +220,7 @@ The `Card.Header` supports custom actions via the actions prop and renders them 
 The `Card.Header` supports two size variants, ``"sm"`` and ``"md"``. 
 Add ``size="sm"`` for smaller header content and actions.
 
-```jsx live
+```jsx live=true
 <Card>
   <Card.Header
     title="Title"
@@ -238,7 +238,7 @@ Add ``size="sm"`` for smaller header content and actions.
 ## Section
 `Card.Section` is the main block to display card content. Can include its own title and actions separate from other card components. Multiple sections have a `Card.Divider` between them.
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -282,7 +282,7 @@ Note that `Card.Footer` has a separate `orientation` prop which will override th
 
 ### Vertical variant
 
-```jsx live
+```jsx live=true
 () => {
   const footerLink = <a href='#link'>Footer text as a link</a>;
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
@@ -324,7 +324,7 @@ Note that `Card.Footer` has a separate `orientation` prop which will override th
 
 ### Horizontal variant
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
   
@@ -352,7 +352,7 @@ Note that `Card.Footer` has a separate `orientation` prop which will override th
 
 `ImageCap` is an image that sits on the top or the left edge of a `Card`. Can contain an optional logo image.
 
-```jsx live
+```jsx live=true
 
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
@@ -385,7 +385,7 @@ Note that `Card.Footer` has a separate `orientation` prop which will override th
 
 When using horizontal variant Paragon provides additional component `Card.Body` which acts as a wrapper for content you want to display between `ImageCap` and `Footer`. Use it if content contains multiple components.
 
-```jsx live
+```jsx live=true
 
 () => {
   const isSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
@@ -467,7 +467,7 @@ When using horizontal variant Paragon provides additional component `Card.Body` 
 
 Note that in the example below, the content of `Card` is wrapped inside `Card.Body`. The `d-flex` class is added for the `horizontal` orientation to achieve horizontal variant. The `flex-column` class is added for the main `Card` component.
 
-```jsx live
+```jsx live=true
 () => {
   const [orientation, setOrientation] = useState('vertical');
   const [variant, setVariant] = useState('warning');
@@ -517,7 +517,7 @@ Note that in the example below, the content of `Card` is wrapped inside `Card.Bo
 ## Card Content Block Empty
 ### With image
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
 
@@ -538,7 +538,7 @@ Note that in the example below, the content of `Card` is wrapped inside `Card.Bo
 
 ### Without image
 
-```jsx live
+```jsx live=true
 
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
@@ -556,7 +556,7 @@ Note that in the example below, the content of `Card` is wrapped inside `Card.Bo
 
 ### Horizontal variant with image
 
-```jsx live
+```jsx live=true
 () => {
   const isSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
 
@@ -581,7 +581,7 @@ Note that in the example below, the content of `Card` is wrapped inside `Card.Bo
 
 ### Horizontal variant without image
 
-```jsx live
+```jsx live=true
 () => {
   const isSmall = useMediaQuery({ maxWidth: breakpoints.small.maxWidth });
 
@@ -603,7 +603,7 @@ Note that in the example below, the content of `Card` is wrapped inside `Card.Bo
 You can specify `fallbackSrc` image to show in case your main `src` fails to load.
 A fallback source is available for both the main `ImageCap` component image and the logo.
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({maxWidth: breakpoints.small.maxWidth});
 
@@ -633,7 +633,7 @@ A fallback source is available for both the main `ImageCap` component image and 
 
 The default fallback image will be displayed if `fallbackSrc` is not specified.
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({maxWidth: breakpoints.small.maxWidth});
 
@@ -661,7 +661,7 @@ The default fallback image will be displayed if `fallbackSrc` is not specified.
 ## With loading state
 ### Vertical variant
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -684,7 +684,7 @@ The default fallback image will be displayed if `fallbackSrc` is not specified.
 
 ### Horizontal variant
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -718,7 +718,7 @@ This component displays a collection of Cards as a grid (with customizable respo
 all cards in a given row have equal height. Try shrinking the width of your browser to view the responsive
 behavior.
 
-```jsx live
+```jsx live=true
 <CardGrid
   columnSizes={{
     xs: 12,
@@ -835,7 +835,7 @@ Displays child `Card` components in a horizontal row with equal height and width
 
 For accessibility, if the child `Card` components are interactive (e.g., `isClickable`), pass the `hasInteractiveChildren` prop so the `CardDeck` itself isn't focusable.
 
-```jsx live
+```jsx live=true
 () => {
   const [hasInteractiveChildren, setHasInteractiveChildren] = useState('false');
 
@@ -885,7 +885,7 @@ Gives any child `Card` components equal height with an appropriate gutter betwee
 
 Note: This component is a pass-thru from `react-bootstrap`.
 
-```jsx live
+```jsx live=true
 () => {
   const CardComponent = () => (
     <Card>
@@ -916,7 +916,7 @@ Extends `CardDeck` to support navigating between any overflow `Card` components 
 
 Includes support for an optional `title` and `subtitle`. You may rely on the default styles for the titles (e.g., if passing strings) or alternatively you may also pass custom HTML and JSX.
 
-```jsx live
+```jsx live=true
 () => {
   const [canScrollHorizontal, setCanScrollHorizontal] = useState('true');
   const [disableOpacityMasks, setDisableOpacityMasks] = useState('false');

@@ -15,9 +15,9 @@ The `Dropzone` allows users to upload files via drag and drop, or by clicking th
 
 You will also need to provide upload logic yourself via `onProcessUpload` prop which accepts function that should take care of uploading the file to the backend (i.e. send HTTP request). 
 This function accepts an object with following content as its only argument:
-- {object} fileData - Metadata about the uploaded file.
-- {object} requestConfig - Config to pass to `axios` call (this is required to display progress bar and hande cancel action).
-- {function} handleError - Function to communicate to `Dropzone` that file upload resulted in failure, expects `Error` object as its only argument.
+- \{object} fileData - Metadata about the uploaded file.
+- \{object} requestConfig - Config to pass to `axios` call (this is required to display progress bar and hande cancel action).
+- \{function} handleError - Function to communicate to `Dropzone` that file upload resulted in failure, expects `Error` object as its only argument.
 
 Each example below implements such a function.
 
@@ -28,7 +28,7 @@ Drag and drop a file to begin uploading, only one file at a time is allowed, no 
 
 - Use `onUploadProgress` prop to get feedback about the upload progress - should be a function that receives (percentageUploaded, progressEvent) as arguments.
 
-```jsx live
+```jsx live=true
 () => {
   async function handleProcessUpload({
     fileData, requestConfig, handleError
@@ -55,7 +55,7 @@ Display upload progress as a progress bar with the ability to cancel the upload.
 
 - Use `onUploadCancel` prop to react to upload cancel event - should be a function that takes `Response` object as its argument. 
 
-```jsx live
+```jsx live=true
 () => {
   async function handleProcessUpload({
     fileData, requestConfig, handleError
@@ -90,7 +90,7 @@ For example:
 
 The component will render a helpful message about size and type restrictions based on the values you pass to `accept`, `minSize` and `maxSize` props.
 
-```jsx live
+```jsx live=true
 () => {
   async function handleProcessUpload({
     fileData, requestConfig, handleError
@@ -123,7 +123,7 @@ The component will render a helpful message about size and type restrictions bas
 
 Shows image after successful upload.
 
-```jsx live
+```jsx live=true
 () => {
   const [uploadedFile, setUploadedFile] = useState(undefined);
 
@@ -161,7 +161,7 @@ Shows image after successful upload.
 
 Accepts only .png files with size between 1MB and 20MB, renders custom validation error messages.
 
-```jsx live
+```jsx live=true
 () => {
   async function handleProcessUpload({
     fileData, requestConfig, handleError
@@ -199,7 +199,7 @@ Accepts only .png files with size between 1MB and 20MB, renders custom validatio
 
 Use `inputComponent` prop to override default view of `Dropzone`.
 
-```jsx live
+```jsx live=true
 () => {
   const MyInputComponent = <p>Hey! You can render here anything you want ;)</p>;
 
@@ -233,7 +233,7 @@ Note that `Dropzone` does not handle unexpected errors that might happen in your
 
 This example validates that only `400x479` images can be uploaded. 
 
-```jsx live
+```jsx live=true
 () => {
   // note that we do not need to validate that received file is actually an image
   // because 'accept' parameter handles that before validation function is used

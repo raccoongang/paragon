@@ -15,7 +15,7 @@ notes: |
 
 ## unselected minimal usage
 
-```jsx live
+```jsx live=true
 <RadioButtonGroup
   name="rbg"
   label="Radio Button Group"
@@ -33,7 +33,7 @@ notes: |
 
 ## selected minimal usage
 
-```jsx live
+```jsx live=true
 <RadioButtonGroup
   name="rbg-2"
   label="Radio Button Group"

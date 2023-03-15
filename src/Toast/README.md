@@ -26,7 +26,7 @@ notes: ''
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 () => {
   const [show, setShow] = useState(false);
 
@@ -47,7 +47,7 @@ notes: ''
 
 ## With Button
 
-```jsx live
+```jsx live=true
 () => {
   const [show, setShow] = useState(false);
 
@@ -72,7 +72,7 @@ notes: ''
 
 ## With Link
 
-```jsx live
+```jsx live=true
 () => {
   const [show, setShow] = useState(false);
 

@@ -14,7 +14,7 @@ notes: ''
 
 ## Basic Usage with Paragon Icon
 
-```jsx live
+```jsx live=true
 () => {
   const variants = ["brand", "primary", "secondary", "success", "warning", "danger", "light", "dark", "black"];
   return (
@@ -29,7 +29,7 @@ notes: ''
 
 ## With tooltips
 
-```jsx live
+```jsx live=true
 () => {
   const variants = ["brand", "primary", "secondary", "success", "warning", "danger", "light", "dark", "black"];
   return (
@@ -54,7 +54,7 @@ notes: ''
 
 ## Active State
 
-```jsx live
+```jsx live=true
 () => {
   const variants = ["brand", "primary", "secondary", "success", "warning", "danger", "light", "dark", "black"];
   return (
@@ -78,7 +78,7 @@ notes: ''
 
 ### isActive=true with inverted colors
 
-```jsx live
+```jsx live=true
 () => {
   const variants = ["brand", "primary", "secondary", "success", "warning", "danger", "light", "dark", "black"];
   return (
@@ -104,7 +104,7 @@ notes: ''
 
 ## Inverted Colors
 
-```jsx live
+```jsx live=true
 <div className="d-flex">
   <div className="p-1 bg-brand">
     <IconButton
@@ -191,7 +191,7 @@ notes: ''
 
 ## Sizes
 
-```jsx live
+```jsx live=true
 <>
   <div className="mb-1">
     Small

@@ -23,7 +23,7 @@ notes: |
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <Carousel>
   <Carousel.Item>
     <img

@@ -18,7 +18,7 @@ The checkpoint objects themselves have additional props that can override the pr
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 () => {
     const [isTourEnabled, setIsTourEnabled] = useState(false);
     const myFirstTour = {

@@ -14,7 +14,7 @@ notes: |
 
 ## basic usage
 
-```jsx live
+```jsx live=true
 <StatusAlert
   dialog="You have a status alert!"
   onClose={() => {}}
@@ -24,7 +24,7 @@ notes: |
 
 ## success alert
 
-```jsx live
+```jsx live=true
 <StatusAlert
   alertType="success"
   dialog="Success!"
@@ -35,7 +35,7 @@ notes: |
 
 ## danger alert
 
-```jsx live
+```jsx live=true
 <StatusAlert
   alertType="danger"
   dialog="Error!"
@@ -46,7 +46,7 @@ notes: |
 
 ## informational alert
 
-```jsx live
+```jsx live=true
 <StatusAlert
   alertType="info"
   dialog="Get some info here!"
@@ -57,7 +57,7 @@ notes: |
 
 ## alert with a custom aria-label on the close button
 
-```jsx live
+```jsx live=true
 <StatusAlert
   alertType="info"
   dialog="Some very specific information."
@@ -69,7 +69,7 @@ notes: |
 
 ## Non-dismissible alert
 
-```jsx live
+```jsx live=true
 <StatusAlert
   alertType="danger"
   dismissible={false}
@@ -80,7 +80,7 @@ notes: |
 
 ## alert invoked via a button
 
-```jsx live
+```jsx live=true
 class StatusAlertWrapper extends React.Component {
   constructor(props) {
     super(props);
@@ -128,7 +128,7 @@ class StatusAlertWrapper extends React.Component {
 
 ## alert with a link
 
-```jsx live
+```jsx live=true
 <StatusAlert
   alertType="info"
   dialog={

@@ -14,7 +14,7 @@ notes: |
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <CheckBoxGroup>
   <CheckBox
     id="checkbox1"

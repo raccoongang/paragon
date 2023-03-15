@@ -17,7 +17,7 @@ A button that contains the user’s Avatar.
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   <div>
     <AvatarButton size="lg" src="https://picsum.photos/128/128/">Casey</AvatarButton>
@@ -34,7 +34,7 @@ A button that contains the user’s Avatar.
 
 ## With Dropdown
 
-```jsx live
+```jsx live=true
 <Dropdown>
   <Dropdown.Toggle as={AvatarButton} src="https://picsum.photos/128/128">
     Casey
@@ -53,7 +53,7 @@ A button that contains the user’s Avatar.
 
 Props set on Dropdown.Toggle get passed through to the "as" component
 
-```jsx live
+```jsx live=true
 <Dropdown>
   <Dropdown.Toggle as={AvatarButton} size="sm" src="https://picsum.photos/128/128/">
     Casey
@@ -74,7 +74,7 @@ Props set on Dropdown.Toggle get passed through to the "as" component
 
 For use in mobile viewports or constrained views.
 
-```jsx live
+```jsx live=true
 <>
   <div>
     <AvatarButton showLabel={false} size="lg" src="https://picsum.photos/128/128/">Casey</AvatarButton>

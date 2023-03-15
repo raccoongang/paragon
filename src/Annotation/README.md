@@ -19,7 +19,7 @@ Display informative text related to an object on screen. Unlike the tooltip an a
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   <Annotation>
     Success variant
@@ -56,7 +56,7 @@ Display informative text related to an object on screen. Unlike the tooltip an a
 
 ## Referring to other elements
 
-```jsx live
+```jsx live=true
 () => {
   const [arrowPlacement, setArrowPlacement] = useState('left')
   const wrapperClass = arrowPlacement === 'top' || arrowPlacement === 'bottom' ? 'flex-column' : '';

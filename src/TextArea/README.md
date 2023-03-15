@@ -14,7 +14,7 @@ notes: |
 
 ## minimal usage
 
-```jsx live
+```jsx live=true
 <TextArea
   name="name"
   label="First Name"
@@ -24,7 +24,7 @@ notes: |
 
 ## scrollable
 
-```jsx live
+```jsx live=true
 <TextArea
   name="name"
   label="Information"
@@ -34,7 +34,7 @@ notes: |
 
 ## validation
 
-```jsx live
+```jsx live=true
 <TextArea
   name="username"
   label="Username"
@@ -54,7 +54,7 @@ notes: |
 
 ## label as element
 
-```jsx live
+```jsx live=true
 <TextArea
   name="username"
   label={<span lang="en">Element</span>}

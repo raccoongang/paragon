@@ -14,7 +14,7 @@ notes: 'Not used anywhere in code on Github. Consult design.'
 
 ## basic usage
 
-```jsx live
+```jsx live=true
 <ListBox>
   <ListBoxOption>
     Apple
@@ -33,7 +33,7 @@ notes: 'Not used anywhere in code on Github. Consult design.'
 
 ## using tag prop
 
-```jsx live
+```jsx live=true
 <React.Fragment>
   <div>This is an ordered list!</div>
   <ListBox tag="ol">
@@ -55,7 +55,7 @@ notes: 'Not used anywhere in code on Github. Consult design.'
 
 ## using onSelect prop
 
-```jsx live
+```jsx live=true
 class ListBoxWrapperForOnSelect extends React.Component {
   constructor(props) {
     super(props);
@@ -124,7 +124,7 @@ class ListBoxWrapperForOnSelect extends React.Component {
 
 ## using selectedOptionIndex prop
 
-```jsx live
+```jsx live=true
 class ListBoxWrapperForSelectedOptionIndex extends React.Component {
   constructor(props) {
     super(props);

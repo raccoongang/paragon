@@ -15,7 +15,7 @@ Represents the filled circle with a number of an icon, supporting the usual colo
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 () => {
   return (
     <>
@@ -54,7 +54,7 @@ Represents the filled circle with a number of an icon, supporting the usual colo
 
 ### Disabled variant
 
-```jsx live
+```jsx live=true
 () => {
   return (
     <Stack direction="horizontal" gap={4} className="mb-2">
@@ -73,7 +73,7 @@ Represents the filled circle with a number of an icon, supporting the usual colo
 
 In the case of long content use `expandable` prop. It adds padding to `Bubble`. Padding value is configurable through `scss` variables.
 
-```jsx live
+```jsx live=true
 () => {
   {/* start example state */}
   const [isExpandable, setIsExpandable] = useState(true);

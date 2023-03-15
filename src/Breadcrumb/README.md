@@ -16,7 +16,7 @@ Use as a secondary navigation pattern to help convey hierarchy and enable naviga
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -35,7 +35,7 @@ Use as a secondary navigation pattern to help convey hierarchy and enable naviga
 
 ### Basic Usage (Mobile View)
 
-```jsx live
+```jsx live=true
 <Breadcrumb ariaLabel="Breadcrumb mobile view"
   links={[
     { label: 'Link 1', href: '/link-1' },
@@ -48,7 +48,7 @@ Use as a secondary navigation pattern to help convey hierarchy and enable naviga
 
 ### Basic Usage (Inverse Palette)
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -75,7 +75,7 @@ This behaviour can be customized with `linkAs` prop, the example below uses Gats
 
 Note that `links` list contains objects with different keys compared to the example above, specifically `href` key is replaced with `to`, that's because Gatsby's `Link` expects its destination to be set through `to` prop (same as react-router's `Link`), internally `Breadcrumb` passes down these objects (except `label` attribute) as props to the `linkAs` element. 
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -94,7 +94,7 @@ Note that `links` list contains objects with different keys compared to the exam
 
 ## With active label
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 
@@ -114,7 +114,7 @@ Note that `links` list contains objects with different keys compared to the exam
 
 ## With custom spacer
 
-```jsx live
+```jsx live=true
 () => {
   const isExtraSmall = useMediaQuery({ maxWidth: breakpoints.extraSmall.maxWidth });
 

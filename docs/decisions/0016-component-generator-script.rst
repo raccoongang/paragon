@@ -39,7 +39,7 @@ where ``MyComponent`` is the name of the new component. The script will perform 
 
 MyComponent
 ├── index.jsx              # contains component definition and its export
-├── README.md              # contains basic frontmatter with jsx live block that renders the component
+├── README.md              # contains basic frontmatter with jsx live=true block that renders the component
 ├── MyComponent.scss       # contains empty CSS class for new component
 ├── _variables.scss        # empty file for SASS variables definitions
 └── MyComponent.test.jsx   # contains single snapshot test

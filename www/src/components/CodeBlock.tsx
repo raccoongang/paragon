@@ -58,18 +58,21 @@ CollapsibleLiveEditor.propTypes = {
 export interface ICodeBlock {
   children: string,
   className?: string,
-  live?: boolean,
+  live?: string,
 }
 
 function CodeBlock({
   children,
   className,
   live,
-}: ICodeBlock) {
+}) {
+  if (!className) {
+    return <code className={className}>{children}</code>;
+  };
   const intl = useIntl();
   const language: any = className ? className.replace(/language-/, '') : 'jsx';
 
-  if (live) {
+  if (live == 'true') {
     return (
       <div className="pgn-doc__code-block">
         <LiveProvider
@@ -134,11 +137,11 @@ function CodeBlock({
 CodeBlock.propTypes = {
   children: PropTypes.string.isRequired,
   className: PropTypes.string,
-  live: PropTypes.bool,
+  live: PropTypes.string,
 };
 
 CodeBlock.defaultProps = {
-  live: false,
+  live: 'false',
   className: '',
 };
 

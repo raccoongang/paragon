@@ -17,7 +17,7 @@ TransitionReplace expects only one child at any time. Swap content inside the co
 
 ## Basic usage
 
-```jsx live
+```jsx live=true
 () => {
   const [isEditing, setIsEditing] = useState(false);
 
@@ -77,7 +77,7 @@ Children are not required. When this component is empty, the a child inserted in
 
 ## Example
 
-```jsx live
+```jsx live=true
 function DemoTransitionReplace() {
   const contentOptions = [
     <blockquote className="h2 m-0" key={0}>

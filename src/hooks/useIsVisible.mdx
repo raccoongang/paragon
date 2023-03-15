@@ -23,7 +23,7 @@ via a parent element's `overflow: hidden;` style.
 In this example, a `div` is conditionally rendered based on the `isHidden` state value. When the button is clicked, the element's
 visibility is toggled. The returned boolean value of the element's visibility is displayed.
 
-```jsx live
+```jsx live=true
 () => {
   const [isElementVisible, elementVisibleRef] = useIsVisible();
   const [isHidden, setIsHidden] = useState(false);

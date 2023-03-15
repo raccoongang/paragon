@@ -21,7 +21,7 @@ The ``SelectableBox`` can contain any kind of content as long as it is not click
 
 As ``Checkbox``
 
-```jsx live
+```jsx live=true
 () => {
   const type = 'checkbox';
   const allCheeseOptions = ['swiss', 'cheddar', 'pepperjack'];
@@ -69,7 +69,7 @@ As ``Checkbox``
 
 As ``Radio``
 
-```jsx live
+```jsx live=true
 () => {
   const type = 'radio';
   const [value, setValue] = useState('green');
@@ -105,7 +105,7 @@ As ``Radio``
 
 As ``Checkbox`` with ``isIndeterminate``
 
-```jsx live
+```jsx live=true
 () => {
   const type = 'checkbox';
   const allCheeseOptions = ['swiss', 'cheddar', 'pepperjack'];

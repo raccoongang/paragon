@@ -26,7 +26,7 @@ Badges are composed of text and an accompanying indicator color, and are typical
 
 ## Basic Usage
 
-```jsx live
+```jsx live=true
 <>
   <Badge variant="primary">Primary</Badge>{' '}
   <Badge variant="secondary">Secondary</Badge>{' '}

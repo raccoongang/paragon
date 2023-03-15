@@ -14,19 +14,19 @@ notes: |
 
 ## minimal usage
 
-```jsx live
+```jsx live=true
 <InputText name="name" label="First Name" value="Foo Bar" />
 ```
 
 ## read only
 
-```jsx live
+```jsx live=true
 <InputText name="inputState" label="Input State" value="Read Only" readOnly />
 ```
 
 ## validation
 
-```jsx live
+```jsx live=true
 <InputText
   id="username"
   name="username"
@@ -47,7 +47,7 @@ notes: |
 
 ### validation with danger theme
 
-```jsx live
+```jsx live=true
 <InputText
   name="username"
   label="Username"
@@ -69,7 +69,7 @@ notes: |
 
 ### label as element
 
-```jsx live
+```jsx live=true
 <InputText
   name="username"
   label={<span lang="en">Element</span>}
@@ -79,7 +79,7 @@ notes: |
 
 ### focus test
 
-```jsx live
+```jsx live=true
 class FocusInputWrapper extends React.Component {
   constructor(props) {
     super(props);
@@ -120,7 +120,7 @@ class FocusInputWrapper extends React.Component {
 
 ### different textual input types
 
-```jsx live
+```jsx live=true
 <form>
   <InputText
     name="search"
@@ -211,7 +211,7 @@ class FocusInputWrapper extends React.Component {
 
 ### price with step
 
-```jsx live
+```jsx live=true
 <InputText
   name="price"
   label="Price"
@@ -224,13 +224,13 @@ class FocusInputWrapper extends React.Component {
 
 ### displayed inline
 
-```jsx live
+```jsx live=true
 <InputText name="username" label="Username" value="foobar" inline />
 ```
 
 ### with input group addons
 
-```jsx live
+```jsx live=true
 <form>
   <InputText
     name="username"
