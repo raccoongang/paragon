@@ -46,7 +46,7 @@
     // Disabled comes first so active can properly restyle
     &.disabled,
     &:disabled {
-      opacity: $btn-disabled-opacity;
+      opacity: var(--pgn-other-btn-disabled-opacity);
     }
 
     &.focus,

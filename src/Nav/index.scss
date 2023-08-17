@@ -16,19 +16,19 @@
 
 .nav-link {
   display: block;
-  padding: $nav-link-padding-y $nav-link-padding-x;
+  padding: var(--pgn-spacing-nav-link-padding-y) var(--pgn-spacing-nav-link-padding-x);
   text-decoration: if($link-decoration == none, null, none);
-  color: $nav-link-color;
+  color: var(--pgn-color-nav-link-text-base);
   font-weight: $nav-link-font-weight;
 
   @include hover-focus {
     text-decoration: none;
-    color: $nav-link-color;
+    color: var(--pgn-color-nav-link-text-base);
   }
 
   // Disabled state lightens text
   &.disabled {
-    color: $nav-link-disabled-color;
+    color: var(--pgn-color-nav-link-text-disabled);
     pointer-events: none;
     cursor: default;
   }
@@ -40,44 +40,44 @@
 
 .pgn__tabs {
   &.nav-pills .nav-link {
-    border: $nav-pills-link-border-width solid $nav-pills-link-border-color;
+    border: var(--pgn-size-nav-pills-link-border-width) solid var(--pgn-color-nav-pills-base-link-border);
 
     &:focus {
-      @include nav-tabs-link-focus($nav-tabs-link-focus-border-color, $nav-pills-border-radius);
+      @include nav-tabs-link-focus(var(--pgn-border-color-nav-tabs-link-border-focus), var(--pgn-size-nav-pills-border-radius));
     }
 
     &:hover {
-      border-color: $nav-tabs-link-hover-border-color;
-      background-color: $nav-tabs-link-hover-bg;
+      border-color: var(--pgn-border-color-nav-tabs-link-border-hover);
+      background-color: var(--pgn-color-nav-tabs-link-hover-bg);
     }
 
     &.active,
     .nav-item.show .nav-link {
-      color: $nav-pills-link-active-color;
-      background-color: $nav-pills-link-active-bg;
+      color: var(--pgn-color-nav-pills-link-active-text);
+      background-color: var(--pgn-color-nav-pills-link-active-bg);
       border-color: $nav-pills-link-active-border-color;
 
       &:focus {
-        @include nav-tabs-link-focus($nav-tabs-link-focus-border-color, $nav-pills-border-radius);
+        @include nav-tabs-link-focus(var(--pgn-color-nav-tabs-link-active-text), var(--pgn-size-nav-pills-border-radius));
       }
     }
   }
 
   &.nav-inverse-pills {
     + .tab-content {
-      color: $nav-inverse-pills-tab-content-color;
+      color: var(--pgn-color-nav-pills-inverse-tab-content-color);
     }
 
     .nav-link {
       color: $nav-inverse-pills-link-color;
-      border: $nav-inverse-pills-link-border-width solid $nav-inverse-pills-link-border-color;
+      border: var(--pgn-size-nav-pills-inverse-link-border-width) solid var(--pgn-color-nav-pills-inverse-link-border-base);
 
       &:hover {
-        background-color: $nav-inverse-pills-link-hover-bg;
+        background-color: var(--pgn-color-nav-pills-inverse-link-bg-hover);
       }
 
       &:focus {
-        @include nav-tabs-link-focus($nav-inverse-pills-link-focus-color);
+        @include nav-tabs-link-focus(var(--pgn-color-nav-pills-inverse-link-text-focus));
       }
 
       &.disabled {
@@ -87,9 +87,9 @@
 
     .nav-link.active,
     .nav-item.show .nav-link {
-      background-color: $nav-inverse-pills-link-active-bg;
-      color: $nav-inverse-pills-link-active-color;
-      border-color: $nav-inverse-pills-link-active-border-color;
+      background-color: var(--pgn-color-nav-pills-inverse-link-bg-active);
+      color: var(--pgn-color-nav-pills-inverse-link-text-active);
+      border-color: var(--pgn-color-nav-pills-inverse-link-border-active);
 
       &:hover {
         background-color: $nav-inverse-pills-link-active-hover-bg;
