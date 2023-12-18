@@ -15,6 +15,15 @@ const STYLE_VARIANTS = [
   'dark',
 ];
 
+
+
+
+
+
+
+
+
+
 Badge.propTypes = {
   /** Specifies element type for this component */
   as: PropTypes.elementType,
